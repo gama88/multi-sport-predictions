@@ -821,6 +821,95 @@
             return realPredictions[sport].find(p => p.game_id === gameId);
         }
 
+        // =========================
+        // NFL BOXSCORE STATS SYSTEM
+        // =========================
+        const boxscoreCache = {};
+
+        // Fetch boxscore stats for NFL games
+        async function fetchNFLBoxscore(eventId) {
+            if (boxscoreCache[eventId]) {
+                return boxscoreCache[eventId];
+            }
+            try {
+                const response = await fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=${eventId}`);
+                const data = await response.json();
+                const boxscore = data.boxscore || {};
+                const teams = boxscore.teams || [];
+
+                const stats = {};
+                teams.forEach(t => {
+                    const abbr = t.team?.abbreviation;
+                    if (abbr) {
+                        stats[abbr] = {};
+                        (t.statistics || []).forEach(s => {
+                            stats[abbr][s.name] = s.displayValue;
+                        });
+                    }
+                });
+
+                boxscoreCache[eventId] = stats;
+                return stats;
+            } catch (e) {
+                console.warn('Could not fetch boxscore:', e);
+                return null;
+            }
+        }
+
+        // Load boxscores for all NFL games on page
+        async function loadNFLBoxscores(events) {
+            if (currentSport !== 'nfl') return;
+
+            const finishedGames = events.filter(e =>
+                e.status?.type?.name?.includes('FINAL') ||
+                e.status?.type?.name?.includes('IN_PROGRESS')
+            );
+
+            for (const event of finishedGames) {
+                const stats = await fetchNFLBoxscore(event.id);
+                if (stats) {
+                    updateGameCardWithStats(event.id, stats);
+                }
+            }
+        }
+
+        // Update a game card with fetched stats
+        function updateGameCardWithStats(eventId, stats) {
+            const card = document.querySelector(`[data-event-id="${eventId}"]`);
+            if (!card) return;
+
+            const statsContainer = card.querySelector('.nfl-stats-placeholder');
+            if (!statsContainer) return;
+
+            const teams = Object.keys(stats);
+            if (teams.length < 2) return;
+
+            const away = teams[0];
+            const home = teams[1];
+            const awayStats = stats[away];
+            const homeStats = stats[home];
+
+            statsContainer.innerHTML = `
+                <div style="display:grid;grid-template-columns:1fr 80px 80px;gap:0.5rem;row-gap:0.4rem">
+                    <span style="color:var(--text-secondary)">🏈 Total Yds (Offense)</span>
+                    <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${awayStats.totalYards || '-'}</span>
+                    <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${homeStats.totalYards || '-'}</span>
+                    
+                    <span style="color:var(--text-secondary)">🏃 Rush Yds (Rushing)</span>
+                    <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${awayStats.rushingYards || '-'}</span>
+                    <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${homeStats.rushingYards || '-'}</span>
+                    
+                    <span style="color:var(--text-secondary)">🔄 1st Dwns (First Downs)</span>
+                    <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${awayStats.firstDowns || '-'}</span>
+                    <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${homeStats.firstDowns || '-'}</span>
+                    
+                    <span style="color:var(--text-secondary)">❌ TO (Turnovers)</span>
+                    <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${awayStats.turnovers || '-'}</span>
+                    <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${homeStats.turnovers || '-'}</span>
+                </div>
+            `;
+        }
+
         // Seeded random number generator (deterministic based on seed)
         function seededRandom(seed) {
             let hash = 0;
@@ -1305,6 +1394,11 @@
                 displayGames(events);
                 updateLiveCount(events);
                 generateParlays(events);
+
+                // Fetch detailed boxscore stats for NFL games
+                if (currentSport === 'nfl') {
+                    loadNFLBoxscores(events);
+                }
             } catch (error) {
                 container.innerHTML = `<div class="no-games">Error loading games: ${error.message}</div>`;
             }
@@ -1441,7 +1535,7 @@
                 const awayLineScores = away.linescores || [];
 
                 return `
-                    <div class="game-card ${isLive ? 'live' : ''} ${isFinal ? 'final' : ''}">
+                    <div class="game-card ${isLive ? 'live' : ''} ${isFinal ? 'final' : ''}" data-event-id="${event.id}">
                         <div class="game-status">
                             ${statusHtml}
                             <span style="font-size:0.7rem;color:var(--text-secondary)">${broadcast ? '📺 ' + broadcast : ''}</span>
@@ -1589,8 +1683,8 @@
                                 `}
                             </div>
                             ` : `
-                            <div style="text-align:center;color:var(--text-secondary);padding:0.5rem;font-style:italic">
-                                ${currentSport === 'nfl' ? '🏈 Check ESPN for full box score stats' :
+                            <div class="nfl-stats-placeholder" style="text-align:center;color:var(--text-secondary);padding:0.5rem;font-style:italic">
+                                ${currentSport === 'nfl' ? '🏈 Loading stats...' :
                             currentSport === 'nhl' ? '🏒 Check ESPN for full game stats' :
                                 currentSport === 'mlb' ? '⚾ Stats available during live games' :
                                     currentSport === 'soccer' ? '⚽ Stats available during live games' :
