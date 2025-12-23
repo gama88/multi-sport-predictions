@@ -889,27 +889,32 @@
             const awayStats = stats[away];
             const homeStats = stats[home];
 
+            // Update the placeholder with stats - matching NBA format
             statsContainer.innerHTML = `
-                <div style="display:grid;grid-template-columns:1fr 80px 80px;gap:0.5rem;row-gap:0.4rem">
-                    <span style="color:var(--text-secondary)">🏈 Total Yds (Offense)</span>
-                    <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${awayStats.totalYards || '-'}</span>
-                    <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${homeStats.totalYards || '-'}</span>
-                    
-                    <span style="color:var(--text-secondary)">🏃 Rush Yds (Rushing)</span>
-                    <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${awayStats.rushingYards || '-'}</span>
-                    <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${homeStats.rushingYards || '-'}</span>
-                    
-                    <span style="color:var(--text-secondary)">🔄 1st Dwns (First Downs)</span>
-                    <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${awayStats.firstDowns || '-'}</span>
-                    <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${homeStats.firstDowns || '-'}</span>
-                    
-                    <span style="color:var(--text-secondary)">❌ TO (Turnovers)</span>
-                    <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${awayStats.turnovers || '-'}</span>
-                    <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${homeStats.turnovers || '-'}</span>
-                </div>
-            `;
+        <div style="display:grid;grid-template-columns:1fr 80px 80px;gap:0.5rem;margin-bottom:0.4rem;padding-bottom:0.3rem;border-bottom:1px dashed var(--border-color)">
+            <span style="color:var(--accent-yellow);font-weight:600">📊 Stats</span>
+            <span style="text-align:center;color:var(--accent-red);font-weight:700;font-size:0.75rem">${away}</span>
+            <span style="text-align:center;color:var(--accent-green);font-weight:700;font-size:0.75rem">${home}</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 80px 80px;gap:0.5rem;row-gap:0.4rem">
+            <span style="color:var(--text-secondary)">🏈 Total Yds (Offense)</span>
+            <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${awayStats.totalYards || '-'}</span>
+            <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${homeStats.totalYards || '-'}</span>
+            
+            <span style="color:var(--text-secondary)">🏃 Rush Yds (Rushing)</span>
+            <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${awayStats.rushingYards || '-'}</span>
+            <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${homeStats.rushingYards || '-'}</span>
+            
+            <span style="color:var(--text-secondary)">🔄 1st Dwns (First Downs)</span>
+            <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${awayStats.firstDowns || '-'}</span>
+            <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${homeStats.firstDowns || '-'}</span>
+            
+            <span style="color:var(--text-secondary)">❌ TO (Turnovers)</span>
+            <span style="text-align:center;background:rgba(239,68,68,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${awayStats.turnovers || '-'}</span>
+            <span style="text-align:center;background:rgba(16,185,129,0.15);padding:0.2rem;border-radius:4px;font-weight:500">${homeStats.turnovers || '-'}</span>
+        </div>
+    `;
         }
-
         // Seeded random number generator (deterministic based on seed)
         function seededRandom(seed) {
             let hash = 0;
