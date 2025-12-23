@@ -1,0 +1,15 @@
+{
+  "sport": "mlb",
+  "models_trained": [
+    "moneyline"
+  ],
+  "metrics": {
+    "moneyline": {
+      "accuracy": 0.5867850098619329,
+      "precision": 0.5503246753246753,
+      "recall": 0.7047817047817048,
+      "auc": 0.6505170201230239
+    }
+  },
+  "trained_at": "2025-12-22T17:03:17.369285"
+}

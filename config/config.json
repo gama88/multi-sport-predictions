@@ -1,0 +1,54 @@
+{
+  "database_path": "data/sports.db",
+  "models_dir": "models",
+  "live_refresh_seconds": 30,
+  "upcoming_refresh_seconds": 300,
+  "sports": {
+    "nba": {
+      "sport_name": "NBA Basketball",
+      "enabled": true,
+      "model_path": "models/nba/model_v1.0.pkl",
+      "refresh_interval_seconds": 30,
+      "api_source": "espn"
+    },
+    "ncaa_basketball": {
+      "sport_name": "NCAA Basketball",
+      "enabled": true,
+      "model_path": "models/ncaa_basketball/model_v1.0.pkl",
+      "refresh_interval_seconds": 30,
+      "api_source": "espn"
+    },
+    "nfl": {
+      "sport_name": "NFL Football",
+      "enabled": true,
+      "model_path": "models/nfl/model_v1.0.pkl",
+      "refresh_interval_seconds": 60,
+      "api_source": "espn"
+    },
+    "ncaa_football": {
+      "sport_name": "NCAA Football",
+      "enabled": true,
+      "model_path": "models/ncaa_football/model_v1.0.pkl",
+      "refresh_interval_seconds": 60,
+      "api_source": "espn"
+    },
+    "nhl": {
+      "sport_name": "NHL Hockey",
+      "enabled": true,
+      "model_path": "models/nhl/model_v1.0.pkl",
+      "refresh_interval_seconds": 30,
+      "api_source": "espn"
+    },
+    "mlb": {
+      "sport_name": "MLB Baseball",
+      "enabled": true,
+      "model_path": "models/mlb/model_v1.0.pkl",
+      "refresh_interval_seconds": 30,
+      "api_source": "espn"
+    }
+  },
+  "api_keys": {},
+  "theme": "dark",
+  "show_predictions": true,
+  "show_confidence": true
+}

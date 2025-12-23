@@ -1,0 +1,374 @@
+{
+  "nba": [
+    {
+      "name": "Basketball_Analytics",
+      "description": "Repository which contains various scripts and work with various basketball statistics",
+      "url": "https://github.com/danchyy/Basketball_Analytics",
+      "stars": 166
+    },
+    {
+      "name": "pbprdf",
+      "description": "Generate linked data for advanced basketball analytics. Reads basketball play-by-play files and gene",
+      "url": "https://github.com/andrewstellman/pbprdf",
+      "stars": 81
+    },
+    {
+      "name": "basketball-analytics",
+      "description": "SQLAlchemy Models for basketball analytics",
+      "url": "https://github.com/FranGoitia/basketball-analytics",
+      "stars": 76
+    },
+    {
+      "name": "Basketball-Analytics",
+      "description": "Investigated quantitatively the optimal body mechanics for shooting basketball by employing pose est",
+      "url": "https://github.com/Ed-Zh/Basketball-Analytics",
+      "stars": 18
+    },
+    {
+      "name": "basketball-analytics",
+      "description": "Analytics with NBA player salaries with data from basketball-reference.com",
+      "url": "https://github.com/ramvibhakar/basketball-analytics",
+      "stars": 13
+    },
+    {
+      "name": "Basketball-Analytics",
+      "description": "Everything Basketball Analytics",
+      "url": "https://github.com/TheResearchLab/Basketball-Analytics",
+      "stars": 7
+    },
+    {
+      "name": "basketballAnalytics",
+      "description": "",
+      "url": "https://github.com/naiik21/basketballAnalytics",
+      "stars": 4
+    },
+    {
+      "name": "osjourno-basketball-m",
+      "description": "Docker image for NCAA men's basketball analytics",
+      "url": "https://github.com/octonion/osjourno-basketball-m",
+      "stars": 3
+    },
+    {
+      "name": "AI-ML-CV-NBA-Basketball-Analytics-System-Interface",
+      "description": "A computer vision pipeline built with PyTorch for advanced NBA analytics. The system uses YOLO for p",
+      "url": "https://github.com/RidwanHaque/AI-ML-CV-NBA-Basketball-Analytics-System-Interface",
+      "stars": 3
+    },
+    {
+      "name": "wnba-analytics-capstone",
+      "description": "A portfolio of basketball analytics projects exploring player performance, draft forecasting, and ro",
+      "url": "https://github.com/mathwanheda/wnba-analytics-capstone",
+      "stars": 3
+    }
+  ],
+  "nfl": [
+    {
+      "name": "NFL-Prediction-Model",
+      "description": "Model created for FiveThirtyEight Forecast Competition",
+      "url": "https://github.com/TyWalters/NFL-Prediction-Model",
+      "stars": 32
+    },
+    {
+      "name": "football-machine-learning",
+      "description": "Machine learning scripts using the Kaggle European Soccer Database",
+      "url": "https://github.com/hugomathien/football-machine-learning",
+      "stars": 18
+    },
+    {
+      "name": "NFL-Prediction-model",
+      "description": "To predict weekly games of the National Football League using game stats",
+      "url": "https://github.com/sidthakur08/NFL-Prediction-model",
+      "stars": 13
+    },
+    {
+      "name": "college_football_machine_learning",
+      "description": "Predicting the outcomes of college football games",
+      "url": "https://github.com/bszek213/college_football_machine_learning",
+      "stars": 7
+    },
+    {
+      "name": "NFL_Prediction_Model_Project",
+      "description": "Create machine learning models in order to predict NFL match up outcomes.",
+      "url": "https://github.com/jake-viss/NFL_Prediction_Model_Project",
+      "stars": 6
+    },
+    {
+      "name": "nfl_prediction_models",
+      "description": "",
+      "url": "https://github.com/wegman7/nfl_prediction_models",
+      "stars": 1
+    },
+    {
+      "name": "Nfl_prediction_model",
+      "description": "This repository contains a Python-based machine learning model designed to predict the final scores ",
+      "url": "https://github.com/Mostlyu/Nfl_prediction_model",
+      "stars": 1
+    },
+    {
+      "name": "nfl-prediction-model",
+      "description": "Machine Learning Model + dashboard for 2025 NFL games",
+      "url": "https://github.com/tblossom12/nfl-prediction-model",
+      "stars": 1
+    },
+    {
+      "name": "FantasyFootballMachineLearning",
+      "description": "",
+      "url": "https://github.com/flizzer/FantasyFootballMachineLearning",
+      "stars": 1
+    },
+    {
+      "name": "FFML",
+      "description": "Fantasy Football Machine Learning",
+      "url": "https://github.com/dodgemcintosh/FFML",
+      "stars": 1
+    }
+  ],
+  "nhl": [
+    {
+      "name": "NHL-Prediction-Model",
+      "description": "Model for computing the probability of each team winning a given matchup in the National Hockey Leag",
+      "url": "https://github.com/HarryShomer/NHL-Prediction-Model",
+      "stars": 17
+    },
+    {
+      "name": "NHL3.0",
+      "description": "NHL Machine Learning Model",
+      "url": "https://github.com/silasnevstad/NHL3.0",
+      "stars": 3
+    },
+    {
+      "name": "nhl-predictions",
+      "description": "Using a hierarchical Bayesian model in pymc to model team scoring and use to predict future outcomes",
+      "url": "https://github.com/tjburch/nhl-predictions",
+      "stars": 2
+    },
+    {
+      "name": "NHL-Prediction-using-Machine-Learning",
+      "description": "",
+      "url": "https://github.com/DTegano/NHL-Prediction-using-Machine-Learning",
+      "stars": 2
+    },
+    {
+      "name": "nhl",
+      "description": "NHL predictions and analysis (data from naturalstattrick.com and corsica.hockey)",
+      "url": "https://github.com/TobiasSolbeckar/nhl",
+      "stars": 2
+    },
+    {
+      "name": "NHLSalaryPrediction",
+      "description": "Using data on NHL Players, we will fit multiple models and then select the one that works the best. ",
+      "url": "https://github.com/matthewcking312/NHLSalaryPrediction",
+      "stars": 1
+    },
+    {
+      "name": "NHLGamePrediction",
+      "description": "By connecting to the NHL's API, this code seeks to predict the winner of a game after one period.",
+      "url": "https://github.com/DavidWBennett/NHLGamePrediction",
+      "stars": 1
+    },
+    {
+      "name": "NHL-Predictions",
+      "description": "Historical Analysis of MoneyPuck predictions, as well as a predictive model based on NHL EDGE shot l",
+      "url": "https://github.com/traskcon/NHL-Predictions",
+      "stars": 1
+    },
+    {
+      "name": "Bayesian_NHL_prediction",
+      "description": "",
+      "url": "https://github.com/JeffreyCHoover/Bayesian_NHL_prediction",
+      "stars": 1
+    },
+    {
+      "name": "Capstone_2_NHL_Predictions",
+      "description": "Springboard Capstone Project 2: Predicting NHL Playoff Teams",
+      "url": "https://github.com/loganschmitt14/Capstone_2_NHL_Predictions",
+      "stars": 1
+    }
+  ],
+  "mlb": [
+    {
+      "name": "MLB_prediction",
+      "description": "Predict Major League Baseball games (win/loss) with machine learning",
+      "url": "https://github.com/whrg/MLB_prediction",
+      "stars": 17
+    },
+    {
+      "name": "mlb-prediction-algorithm",
+      "description": "Algorithm for Estimating the winner of a given MLB matchup.",
+      "url": "https://github.com/quantgalore/mlb-prediction-algorithm",
+      "stars": 4
+    },
+    {
+      "name": "538-MLB-Predictions",
+      "description": "Archive and analysis of 538's MLB upcoming game predictions for the 2017 season",
+      "url": "https://github.com/Larry-Hignight/538-MLB-Predictions",
+      "stars": 4
+    },
+    {
+      "name": "MLB_Prediction",
+      "description": "Combining classification algorithms to predict the winner of each professional baseball game",
+      "url": "https://github.com/Rtiwary-1/MLB_Prediction",
+      "stars": 3
+    },
+    {
+      "name": "mlb-prediction-engine",
+      "description": "Utilizes all of the services to create predictions ",
+      "url": "https://github.com/mlb-ranking/mlb-prediction-engine",
+      "stars": 3
+    },
+    {
+      "name": "mlb-predictions",
+      "description": "Using data from the 2022 MLB season, train and test a machine learning model that predicts whether o",
+      "url": "https://github.com/lydiatc97/mlb-predictions",
+      "stars": 2
+    },
+    {
+      "name": "MLBScoresPrediction",
+      "description": "Predicts Over/Under and Score Difference on Daily MLB Matchups",
+      "url": "https://github.com/leowei08/MLBScoresPrediction",
+      "stars": 2
+    },
+    {
+      "name": "MLB-Game-Prediction",
+      "description": "MLB Prediction Engine using Machine Learning ",
+      "url": "https://github.com/tathreya/MLB-Game-Prediction",
+      "stars": 2
+    },
+    {
+      "name": "mlb-predictions",
+      "description": "Predictions for the outcome of MLB games.",
+      "url": "https://github.com/fantasy-toolz/mlb-predictions",
+      "stars": 2
+    },
+    {
+      "name": "MLB_prediction_production",
+      "description": "Deployed Keras model built on Tensorflow predicting MLB outcomes",
+      "url": "https://github.com/asoane34/MLB_prediction_production",
+      "stars": 2
+    }
+  ],
+  "ncaa_basketball": [
+    {
+      "name": "March-Madness-ML",
+      "description": "Machine learned bracketology",
+      "url": "https://github.com/adeshpande3/March-Madness-ML",
+      "stars": 191
+    },
+    {
+      "name": "NCAA_Hoops",
+      "description": "All the files used in my NCAA Men's Basketball modeling, predictions, bracketology, and Ivy League s",
+      "url": "https://github.com/lbenz730/NCAA_Hoops",
+      "stars": 68
+    },
+    {
+      "name": "mRchmadness",
+      "description": "NCAA men's basketball data scraping and bracketology R package",
+      "url": "https://github.com/elishayer/mRchmadness",
+      "stars": 23
+    },
+    {
+      "name": "ncaa",
+      "description": "March Madness prediction",
+      "url": "https://github.com/jnu/ncaa",
+      "stars": 7
+    },
+    {
+      "name": "bracketology",
+      "description": ":basketball: R data package featuring 2.8 million brackets from the 2015 NCAA Men's Basketball Tourn",
+      "url": "https://github.com/seankross/bracketology",
+      "stars": 7
+    },
+    {
+      "name": "NCAA-2018-Mens-March-Madness",
+      "description": "March Madness Predictions",
+      "url": "https://github.com/bricewalker/NCAA-2018-Mens-March-Madness",
+      "stars": 5
+    },
+    {
+      "name": "March-Madness-Predictions",
+      "description": "A Python program to predict the NCAA March Madness Basketball results based upon per team regular se",
+      "url": "https://github.com/pastormt/March-Madness-Predictions",
+      "stars": 4
+    },
+    {
+      "name": "bracketology",
+      "description": "A package for analyzing NCAA march madness tournament data",
+      "url": "https://github.com/kylestahl/bracketology",
+      "stars": 4
+    },
+    {
+      "name": "bracketology",
+      "description": "Python script to project which college basketball teams will make the NCAA tournament.",
+      "url": "https://github.com/charliehergenrother/bracketology",
+      "stars": 3
+    },
+    {
+      "name": "basketball-bracketology",
+      "description": "NCAA basketball brackets and bracketology.",
+      "url": "https://github.com/octonion/basketball-bracketology",
+      "stars": 3
+    }
+  ],
+  "ncaa_football": [
+    {
+      "name": "college_football_machine_learning",
+      "description": "Predicting the outcomes of college football games",
+      "url": "https://github.com/bszek213/college_football_machine_learning",
+      "stars": 7
+    },
+    {
+      "name": "cfb-f21",
+      "description": "MDST College Football Predictions Fall 2021",
+      "url": "https://github.com/skunichetty/cfb-f21",
+      "stars": 2
+    },
+    {
+      "name": "cfs",
+      "description": "College Football Prediction & Rankings using Google API",
+      "url": "https://github.com/vrivellino/cfs",
+      "stars": 1
+    },
+    {
+      "name": "ML_CollegeFootball",
+      "description": "Machine Learning College Football Prediction Analysis",
+      "url": "https://github.com/coulbynguyen/ML_CollegeFootball",
+      "stars": 1
+    },
+    {
+      "name": "cfb-analytics",
+      "description": "",
+      "url": "https://github.com/jmar257/cfb-analytics",
+      "stars": 1
+    },
+    {
+      "name": "CFB-Analytics",
+      "description": "",
+      "url": "https://github.com/zaneddennis/CFB-Analytics",
+      "stars": 1
+    },
+    {
+      "name": "CollegeFootballPredictions",
+      "description": "Little side project trying to predict sports results",
+      "url": "https://github.com/lakew68/CollegeFootballPredictions",
+      "stars": 0
+    },
+    {
+      "name": "TiresiasCFB",
+      "description": "College Football Prediction",
+      "url": "https://github.com/DylanEustice/TiresiasCFB",
+      "stars": 0
+    },
+    {
+      "name": "cfb_ml",
+      "description": "College Football Prediction",
+      "url": "https://github.com/JayThomason/cfb_ml",
+      "stars": 0
+    },
+    {
+      "name": "CollegeFB_Model",
+      "description": "College Football Prediction",
+      "url": "https://github.com/JordanEGreenhut/CollegeFB_Model",
+      "stars": 0
+    }
+  ]
+}

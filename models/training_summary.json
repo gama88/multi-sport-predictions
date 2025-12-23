@@ -1,0 +1,90 @@
+{
+  "sports_trained": [
+    "nba",
+    "nfl",
+    "nhl",
+    "mlb",
+    "ncaa_basketball",
+    "soccer"
+  ],
+  "total_models": 14,
+  "results": {
+    "nba": {
+      "moneyline": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "auc": 1.0
+      },
+      "spread": {
+        "accuracy": 0.8936409679234665,
+        "precision": 0.8295530353569046
+      },
+      "overunder": {
+        "accuracy": 0.8488088538735696
+      }
+    },
+    "nfl": {
+      "moneyline": {
+        "accuracy": 0.5633704735376045,
+        "precision": 0.5768911055694098,
+        "recall": 0.854679802955665,
+        "auc": 0.5673824424497915
+      },
+      "spread": {
+        "accuracy": 0.567200557103064,
+        "precision": 0.5549828178694158
+      },
+      "overunder": {
+        "accuracy": 0.560933147632312
+      }
+    },
+    "nhl": {
+      "moneyline": {
+        "accuracy": 0.5780269910663371,
+        "precision": 0.5522088353413654,
+        "recall": 0.23666092943201378,
+        "auc": 0.5910017569182318
+      },
+      "spread": {
+        "accuracy": 0.5601596654628398,
+        "precision": 0.5570358034970858
+      },
+      "overunder": {
+        "accuracy": 0.5713742634480137
+      }
+    },
+    "mlb": {
+      "moneyline": {
+        "accuracy": 0.5867850098619329,
+        "precision": 0.5503246753246753,
+        "recall": 0.7047817047817048,
+        "auc": 0.6505170201230239
+      }
+    },
+    "ncaa_basketball": {
+      "moneyline": {
+        "accuracy": 0.7966537966537967,
+        "precision": 0.8083623693379791,
+        "recall": 0.6925373134328359,
+        "auc": 0.8814412102384008
+      }
+    },
+    "soccer": {
+      "moneyline": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "auc": 1.0
+      },
+      "spread": {
+        "accuracy": 1.0,
+        "precision": 1.0
+      },
+      "overunder": {
+        "accuracy": 0.6810982405187261
+      }
+    }
+  },
+  "trained_at": "2025-12-22T17:03:18.877193"
+}

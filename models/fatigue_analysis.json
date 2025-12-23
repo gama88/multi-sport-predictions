@@ -1,0 +1,36 @@
+{
+  "analysis": "Fatigue Feature Impact",
+  "results": {
+    "nba": {
+      "accuracy_with_fatigue": 1.0,
+      "accuracy_baseline": 1.0,
+      "improvement": 0.0,
+      "auc": 1.0
+    },
+    "nfl": {
+      "accuracy_with_fatigue": 0.5598885793871866,
+      "accuracy_baseline": 0.5598885793871866,
+      "improvement": 0.0,
+      "auc": 0.571465844402277
+    },
+    "nhl": {
+      "accuracy_with_fatigue": 0.5765063676107204,
+      "accuracy_baseline": 0.573845276563391,
+      "improvement": 0.002661091047329367,
+      "auc": 0.5876900275844368
+    },
+    "mlb": {
+      "accuracy_with_fatigue": 0.5570987654320988,
+      "accuracy_baseline": 0.5673868312757202,
+      "improvement": -0.010288065843621408,
+      "auc": 0.5803352620830498
+    },
+    "soccer": {
+      "accuracy_with_fatigue": 0.6881669593408077,
+      "accuracy_baseline": 0.6885046602728624,
+      "improvement": -0.000337700932054652,
+      "auc": 0.7573651060445966
+    }
+  },
+  "timestamp": "2025-12-22T17:38:24.166129"
+}

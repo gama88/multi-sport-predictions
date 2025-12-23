@@ -1,0 +1,24 @@
+{
+  "sport": "nhl",
+  "models_trained": [
+    "moneyline",
+    "spread",
+    "overunder"
+  ],
+  "metrics": {
+    "moneyline": {
+      "accuracy": 0.5780269910663371,
+      "precision": 0.5522088353413654,
+      "recall": 0.23666092943201378,
+      "auc": 0.5910017569182318
+    },
+    "spread": {
+      "accuracy": 0.5601596654628398,
+      "precision": 0.5570358034970858
+    },
+    "overunder": {
+      "accuracy": 0.5713742634480137
+    }
+  },
+  "trained_at": "2025-12-22T17:03:17.182112"
+}

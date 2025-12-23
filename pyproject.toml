@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=69.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multi-sport-predictions"
+version = "0.1.0"
+description = "A TUI for live sports predictions powered by Machine Learning"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Sports Predictions Team"}
+]
+keywords = ["sports", "predictions", "machine-learning", "tui", "nba", "nfl", "nhl", "mlb"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment",
+]
+
+dependencies = [
+    "textual>=0.47.0",
+    "rich>=13.7.0",
+    "scikit-learn>=1.4.0",
+    "xgboost>=2.0.0",
+    "pandas>=2.2.0",
+    "numpy>=1.26.0",
+    "requests>=2.31.0",
+    "aiohttp>=3.9.0",
+    "pydantic>=2.6.0",
+    "apscheduler>=3.10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "black>=24.0.0",
+    "ruff>=0.3.0",
+    "mypy>=1.8.0",
+]
+
+[project.scripts]
+sports-tui = "src.tui.app:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.black]
+line-length = 100
+target-version = ["py311", "py312"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "N", "W"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true

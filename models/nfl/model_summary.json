@@ -1,0 +1,24 @@
+{
+  "sport": "nfl",
+  "models_trained": [
+    "moneyline",
+    "spread",
+    "overunder"
+  ],
+  "metrics": {
+    "moneyline": {
+      "accuracy": 0.5633704735376045,
+      "precision": 0.5768911055694098,
+      "recall": 0.854679802955665,
+      "auc": 0.5673824424497915
+    },
+    "spread": {
+      "accuracy": 0.567200557103064,
+      "precision": 0.5549828178694158
+    },
+    "overunder": {
+      "accuracy": 0.560933147632312
+    }
+  },
+  "trained_at": "2025-12-22T17:03:16.630628"
+}

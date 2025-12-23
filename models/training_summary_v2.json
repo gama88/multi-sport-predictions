@@ -1,0 +1,197 @@
+{
+  "version": "2.0",
+  "training_method": "Research-Backed XGBoost",
+  "features": [
+    "Rolling averages (3, 5, 10 games)",
+    "ELO ratings",
+    "Feature interactions",
+    "Z-score normalization",
+    "Polynomial features"
+  ],
+  "sports_trained": [
+    "nba",
+    "nfl",
+    "nhl",
+    "mlb",
+    "ncaa_basketball",
+    "soccer"
+  ],
+  "total_models": 16,
+  "average_accuracy": 0.7256302836036208,
+  "estimated_roi": 38.47906175641618,
+  "results": {
+    "nba": {
+      "moneyline": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "auc": 1.0,
+        "brier_score": 3.464248641603925e-08,
+        "samples": 65698,
+        "cv_accuracy": 1.0,
+        "cv_std": 0.0
+      },
+      "spread": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "auc": 1.0,
+        "brier_score": 4.9372050357209606e-08,
+        "samples": 65698,
+        "cv_accuracy": 1.0,
+        "cv_std": 0.0
+      },
+      "overunder": {
+        "accuracy": 0.9813546423135464,
+        "precision": 0.9820143884892086,
+        "recall": 0.9797160243407708,
+        "auc": 0.9987105165377232,
+        "brier_score": 0.02171882780575379,
+        "samples": 65698,
+        "cv_accuracy": 0.9792800508186901,
+        "cv_std": 0.0011387815502532492
+      }
+    },
+    "nfl": {
+      "moneyline": {
+        "accuracy": 0.5414345403899722,
+        "precision": 0.5734951003266449,
+        "recall": 0.7530637254901961,
+        "auc": 0.5461913444813409,
+        "brier_score": 0.2455009015127299,
+        "samples": 14358,
+        "cv_accuracy": 0.5579836036939241,
+        "cv_std": 0.007474117699358712
+      },
+      "spread": {
+        "accuracy": 0.557799442896936,
+        "precision": 0.5172413793103449,
+        "recall": 0.3235747303543914,
+        "auc": 0.5664868050348204,
+        "brier_score": 0.24644620579598323,
+        "samples": 14358,
+        "cv_accuracy": 0.5697371187983873,
+        "cv_std": 0.007831396630633735
+      },
+      "overunder": {
+        "accuracy": 0.5605849582172702,
+        "precision": 0.5588652482269504,
+        "recall": 0.5518207282913166,
+        "auc": 0.5895827513831017,
+        "brier_score": 0.24425738851971163,
+        "samples": 14358,
+        "cv_accuracy": 0.5688677819064714,
+        "cv_std": 0.01080786850726827
+      }
+    },
+    "nhl": {
+      "moneyline": {
+        "accuracy": 0.8187782159584703,
+        "precision": 0.3505514267761576,
+        "recall": 0.7897588597090696,
+        "auc": 0.893305734008391,
+        "brier_score": 0.13351498028861195,
+        "samples": 945830,
+        "cv_accuracy": 0.8183685211961693,
+        "cv_std": 0.0008054403637804598
+      },
+      "spread": {
+        "accuracy": 0.8150883351130753,
+        "precision": 0.3458093069770411,
+        "recall": 0.793322268866543,
+        "auc": 0.8927253518779872,
+        "brier_score": 0.1347099554362201,
+        "samples": 945830,
+        "cv_accuracy": 0.8155059575455645,
+        "cv_std": 0.0007014249798434296
+      },
+      "overunder": {
+        "accuracy": 0.7647621665627016,
+        "precision": 0.3486129458388375,
+        "recall": 0.8069411000267553,
+        "auc": 0.8739330222751737,
+        "brier_score": 0.1521833397246882,
+        "samples": 945830,
+        "cv_accuracy": 0.7646775862847239,
+        "cv_std": 0.0010154952545133496
+      }
+    },
+    "mlb": {
+      "moneyline": {
+        "accuracy": 0.5555555555555556,
+        "precision": 0.5238663484486874,
+        "recall": 0.4856194690265487,
+        "auc": 0.5809213325391422,
+        "brier_score": 0.24704588856232582,
+        "samples": 9718,
+        "cv_accuracy": 0.5553125840585647,
+        "cv_std": 0.005701409478826985
+      },
+      "spread": {
+        "accuracy": 0.5653292181069959,
+        "precision": 0.5380894800483675,
+        "recall": 0.4900881057268722,
+        "auc": 0.5789714549351113,
+        "brier_score": 0.24824890354885046,
+        "samples": 9718,
+        "cv_accuracy": 0.5593005499757912,
+        "cv_std": 0.004975285959761708
+      },
+      "overunder": {
+        "accuracy": 0.6692386831275721,
+        "precision": 0.6618852459016393,
+        "recall": 0.6736183524504692,
+        "auc": 0.7266791232406853,
+        "brier_score": 0.21145846324811168,
+        "samples": 9718,
+        "cv_accuracy": 0.6614373031736376,
+        "cv_std": 0.014853428593064886
+      }
+    },
+    "ncaa_basketball": {
+      "moneyline": {
+        "accuracy": 0.8146718146718147,
+        "precision": 0.7894736842105263,
+        "recall": 0.75,
+        "auc": 0.8905771334792122,
+        "brier_score": 0.1307045782066441,
+        "samples": 3885,
+        "cv_accuracy": 0.8281782831342456,
+        "cv_std": 0.010852203951132056
+      }
+    },
+    "soccer": {
+      "moneyline": {
+        "accuracy": 0.694313116304201,
+        "precision": 0.6722195779787403,
+        "recall": 0.6326713453785276,
+        "auc": 0.7623262730234113,
+        "brier_score": 0.19676592679353286,
+        "samples": 74026,
+        "cv_accuracy": 0.6884160756501182,
+        "cv_std": 0.003994787948413077
+      },
+      "spread": {
+        "accuracy": 0.6956639200324193,
+        "precision": 0.6739717325710656,
+        "recall": 0.6337165895176945,
+        "auc": 0.7630061890245481,
+        "brier_score": 0.196459876307005,
+        "samples": 74026,
+        "cv_accuracy": 0.6894292468760554,
+        "cv_std": 0.002515191758264269
+      },
+      "overunder": {
+        "accuracy": 0.5755099284074024,
+        "precision": 0.38217703349282295,
+        "recall": 0.5427904013590996,
+        "auc": 0.5898448144945609,
+        "brier_score": 0.24217735344925342,
+        "samples": 74026,
+        "cv_accuracy": 0.5723235393448161,
+        "cv_std": 0.005774631597399392
+      }
+    }
+  },
+  "trained_at": "2025-12-22T17:34:28.393260"
+}

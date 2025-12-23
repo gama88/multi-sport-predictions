@@ -1,0 +1,24 @@
+{
+  "sport": "nba",
+  "models_trained": [
+    "moneyline",
+    "spread",
+    "overunder"
+  ],
+  "metrics": {
+    "moneyline": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "auc": 1.0
+    },
+    "spread": {
+      "accuracy": 0.8936409679234665,
+      "precision": 0.8295530353569046
+    },
+    "overunder": {
+      "accuracy": 0.8488088538735696
+    }
+  },
+  "trained_at": "2025-12-22T17:03:16.116419"
+}

@@ -1,0 +1,15 @@
+{
+  "sport": "ncaa_basketball",
+  "models_trained": [
+    "moneyline"
+  ],
+  "metrics": {
+    "moneyline": {
+      "accuracy": 0.7966537966537967,
+      "precision": 0.8083623693379791,
+      "recall": 0.6925373134328359,
+      "auc": 0.8814412102384008
+    }
+  },
+  "trained_at": "2025-12-22T17:03:17.624420"
+}
