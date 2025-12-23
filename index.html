@@ -690,10 +690,10 @@
                         <p>Market price: <strong style="color:var(--accent-yellow)">$0.62</strong> (62% implied)</p>
                         <p>Our AI says: <strong style="color:var(--accent-green)">68%</strong> ← Edge!</p>
                         <p style="border-top:1px dashed var(--border-color);margin-top:0.3rem;padding-top:0.3rem">
-                            Buy: <strong>50 contracts × $0.62 = $31.00</strong></p>
-                        <p style="color:var(--accent-green)">If Lakers win: 50 × $1 = <strong>$50.00</strong> (+$19
+                            Buy: <strong>32 contracts × $0.62 = $20.00</strong></p>
+                        <p style="color:var(--accent-green)">If Lakers win: 32 × $1 = <strong>$32.00</strong> (+$12
                             profit)</p>
-                        <p style="color:var(--accent-red)">If Lakers lose: <strong>$0.00</strong> (-$31 loss)</p>
+                        <p style="color:var(--accent-red)">If Lakers lose: <strong>$0.00</strong> (-$20 loss)</p>
                     </div>
 
                     <p style="margin-bottom:0.5rem"><strong style="color:var(--accent-primary)">🎯 Where to
@@ -1238,7 +1238,7 @@
             moneyline: "💡 <strong>Moneyline</strong> = Pick who wins the game. Simplest bet! Open DraftKings, FanDuel, or BetMGM → find the game → tap the team name to bet them to win.",
             spread: "💡 <strong>Spread</strong> = Pick if a team wins by enough points. Example: \"Lakers -5\" means Lakers must win by 6+ points. Open DraftKings, FanDuel, or BetMGM → tap the spread number next to the team.",
             total: "💡 <strong>Over/Under</strong> = Predict if total combined score goes OVER or UNDER a number. Open DraftKings, FanDuel, or BetMGM → find the O/U line → tap OVER or UNDER.",
-            contracts: "💡 <strong>Contracts</strong> = Trade predictions like stocks! Example: Lakers win priced at 65¢. Buy $30 worth (46 shares). If they win → you get $46 back (+$16 profit!). Open Polymarket, Kalshi, or PredictIt → search the game → buy YES or NO.",
+            contracts: "💡 <strong>Contracts</strong> = Trade predictions like stocks! Example: Lakers win priced at 65¢. Buy $20 worth (30 shares). If they win → you get $30 back (+$10 profit!). Open Polymarket, Kalshi, or PredictIt → search the game → buy YES or NO.",
             history: "📜 Your tracked predictions and their results. See how well you're doing over time!"
         };
 
@@ -1742,7 +1742,7 @@
                     </div>
                     <div style="font-size:0.65rem;color:var(--text-secondary);padding:0.5rem;background:var(--bg-card);border-radius:0 0 8px 8px;margin-top:-0.5rem;margin-bottom:0.75rem">
                         ${hasEdge
-                            ? `<strong style="color:var(--accent-green)">💰 VALUE BET:</strong> Buy $30 worth. If ${pick.team} wins → $${(30 / marketPrice).toFixed(0)} payout (+$${((30 / marketPrice) - 30).toFixed(0)} profit!)`
+                            ? `<strong style="color:var(--accent-green)">💰 VALUE BET:</strong> Buy $20 worth. If ${pick.team} wins → $${(20 / marketPrice).toFixed(0)} payout (+$${((20 / marketPrice) - 20).toFixed(0)} profit!)`
                             : action === 'BUY NO'
                                 ? `<strong>Strategy:</strong> Buy NO contract. The market overvalues this outcome.`
                                 : `<strong>Strategy:</strong> Edge too small. Wait for better price.`
