@@ -1,0 +1,88 @@
+{
+  "nba": {
+    "moneyline": {
+      "accuracy": 0.634532103182075,
+      "baseline": 0.654,
+      "improvement": -0.019467896817925046
+    },
+    "spread": {
+      "accuracy": 0.6239879495386933,
+      "baseline": 0.734,
+      "improvement": -0.11001205046130669
+    },
+    "total": {
+      "accuracy": 0.2234983995481077,
+      "baseline": 0.622,
+      "improvement": -0.3985016004518923
+    }
+  },
+  "nfl": {
+    "moneyline": {
+      "accuracy": 0.6093640810621943,
+      "baseline": 0.651,
+      "improvement": -0.041635918937805716
+    },
+    "spread": {
+      "accuracy": 0.6757512229210343,
+      "baseline": 0.69,
+      "improvement": -0.014248777078965658
+    },
+    "total": {
+      "accuracy": 0.5206149545772187,
+      "baseline": 0.563,
+      "improvement": -0.04238504542278121
+    }
+  },
+  "nhl": {
+    "moneyline": {
+      "accuracy": 0.5259185700099305,
+      "baseline": 0.72,
+      "improvement": -0.1940814299900695
+    },
+    "spread": {
+      "accuracy": 0.6744786494538232,
+      "baseline": 0.664,
+      "improvement": 0.010478649453823152
+    },
+    "total": {
+      "accuracy": 0.47229394240317774,
+      "baseline": 0.601,
+      "improvement": -0.12870605759682224
+    }
+  },
+  "mlb": {
+    "moneyline": {
+      "accuracy": 0.5807613168724279,
+      "baseline": 0.534,
+      "improvement": 0.046761316872427905
+    },
+    "spread": {
+      "accuracy": 0.6188271604938271,
+      "baseline": 0.62,
+      "improvement": -0.0011728395061728625
+    },
+    "total": {
+      "accuracy": 0.49228395061728397,
+      "baseline": 0.584,
+      "improvement": -0.09171604938271599
+    }
+  },
+  "soccer": {
+    "moneyline": {
+      "accuracy": 0.6687833547253935,
+      "baseline": 0.67,
+      "improvement": -0.0012166452746065204
+    },
+    "spread": {
+      "accuracy": 0.6687833547253935,
+      "baseline": 0.753,
+      "improvement": -0.08421664527460648
+    },
+    "total": {
+      "accuracy": 0.5594136323718165,
+      "baseline": 0.615,
+      "improvement": -0.055586367628183475
+    }
+  },
+  "trained_at": "2025-12-23T05:49:04.287071"
+}

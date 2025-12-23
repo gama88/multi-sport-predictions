@@ -33,13 +33,13 @@ ENDPOINTS = {
 }
 
 # Model accuracy - USE BEST MODEL FOR EACH BET TYPE
-# Includes specialized models that beat V6 baselines
+# Includes V6 specialized + V7 advanced models that beat baselines
 MODEL_ACCURACY = {
-    'nba': {'moneyline': 0.654, 'spread': 0.734, 'total': 0.622},  # V6 still best
-    'nfl': {'moneyline': 0.651, 'spread': 0.690, 'total': 0.563},  # NEW: spread specialized 69.0%
-    'nhl': {'moneyline': 0.720, 'spread': 0.664, 'total': 0.601},  # NEW: spread specialized 66.4%
-    'mlb': {'moneyline': 0.534, 'spread': 0.620, 'total': 0.584},  # NEW: spread specialized 62.0%
-    'soccer': {'moneyline': 0.670, 'spread': 0.753, 'total': 0.615},  # NEW: moneyline specialized 67.0%
+    'nba': {'moneyline': 0.654, 'spread': 0.734, 'total': 0.622},  # V6 best
+    'nfl': {'moneyline': 0.651, 'spread': 0.690, 'total': 0.563},  # V6 spread specialized
+    'nhl': {'moneyline': 0.720, 'spread': 0.674, 'total': 0.601},  # V7 spread 67.4%
+    'mlb': {'moneyline': 0.581, 'spread': 0.620, 'total': 0.584},  # V7 ML 58.1%
+    'soccer': {'moneyline': 0.670, 'spread': 0.753, 'total': 0.615},  # V6 ML specialized
 }
 
 

@@ -763,15 +763,15 @@
         let currentPickType = 'moneyline';
 
         // Model accuracy data - BEST MODELS per sport + bet type (Dec 2025)
-        // Uses V6 + Specialized models where they beat baseline
-        // NEW: NFL/NHL/MLB spread specialized, Soccer ML specialized
+        // Uses V6 + V7 advanced models where they beat baseline
+        // V7: MLB ML 58.1%, NHL spread 67.4%
         const modelData = {
-            nba: { moneyline: 0.65, spread: 0.73, overunder: 0.62, contracts: 0.65 },  // V6 still best
-            nfl: { moneyline: 0.65, spread: 0.69, overunder: 0.56, contracts: 0.65 },  // NEW: spread 69%
-            nhl: { moneyline: 0.72, spread: 0.66, overunder: 0.60, contracts: 0.72 },  // NEW: spread 66.4%
-            mlb: { moneyline: 0.53, spread: 0.62, overunder: 0.58, contracts: 0.53 },  // NEW: spread 62%
+            nba: { moneyline: 0.65, spread: 0.73, overunder: 0.62, contracts: 0.65 },  // V6 best
+            nfl: { moneyline: 0.65, spread: 0.69, overunder: 0.56, contracts: 0.65 },  // V6 spread specialized
+            nhl: { moneyline: 0.72, spread: 0.67, overunder: 0.60, contracts: 0.72 },  // V7 spread 67.4%
+            mlb: { moneyline: 0.58, spread: 0.62, overunder: 0.58, contracts: 0.58 },  // V7 ML 58.1%
             ncaa_basketball: { moneyline: 0.65, contracts: 0.65 },
-            soccer: { moneyline: 0.67, spread: 0.75, overunder: 0.62, contracts: 0.67 },  // NEW: ML 67%
+            soccer: { moneyline: 0.67, spread: 0.75, overunder: 0.62, contracts: 0.67 },  // V6 ML specialized
             tennis: { moneyline: 0.63, contracts: 0.63 }
         };
 

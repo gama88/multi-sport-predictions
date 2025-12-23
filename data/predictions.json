@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-23T05:28:47.232861",
+  "generated_at": "2025-12-23T05:50:25.570050",
   "model_version": "v6_behavioral",
   "predictions": {
     "nba": [
@@ -13,27 +13,27 @@
           "moneyline": {
             "pick": "Charlotte Hornets",
             "pick_home": false,
-            "confidence": 0.676,
+            "confidence": 0.74,
             "model_accuracy": 0.654
           },
           "spread": {
-            "pick": "CHA +4.8",
+            "pick": "CHA +7.0",
             "pick_home": false,
-            "confidence": 0.582,
-            "spread_line": "CLE -4.8",
+            "confidence": 0.617,
+            "spread_line": "CLE -7.0",
             "model_accuracy": 0.734
           },
           "total": {
-            "pick": "OVER 235",
+            "pick": "OVER 225",
             "pick_over": true,
-            "confidence": 0.736,
-            "total_line": 235,
+            "confidence": 0.729,
+            "total_line": 225,
             "model_accuracy": 0.622
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2025-12-23T05:28:45.669539",
+        "generated_at": "2025-12-23T05:50:23.728068",
         "status": "STATUS_FINAL"
       },
       {
@@ -44,29 +44,29 @@
         "away_abbrev": "IND",
         "predictions": {
           "moneyline": {
-            "pick": "Boston Celtics",
-            "pick_home": true,
-            "confidence": 0.536,
+            "pick": "Indiana Pacers",
+            "pick_home": false,
+            "confidence": 0.648,
             "model_accuracy": 0.654
           },
           "spread": {
-            "pick": "BOS -8.5",
-            "pick_home": true,
-            "confidence": 0.516,
-            "spread_line": "BOS -8.5",
+            "pick": "IND +7.0",
+            "pick_home": false,
+            "confidence": 0.569,
+            "spread_line": "BOS -7.0",
             "model_accuracy": 0.734
           },
           "total": {
-            "pick": "OVER 230",
+            "pick": "OVER 235",
             "pick_over": true,
-            "confidence": 0.68,
-            "total_line": 230,
+            "confidence": 0.699,
+            "total_line": 235,
             "model_accuracy": 0.622
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2025-12-23T05:28:45.670049",
+        "generated_at": "2025-12-23T05:50:23.728601",
         "status": "STATUS_FINAL"
       },
       {
@@ -77,29 +77,29 @@
         "away_abbrev": "DAL",
         "predictions": {
           "moneyline": {
-            "pick": "Dallas Mavericks",
-            "pick_home": false,
-            "confidence": 0.67,
+            "pick": "New Orleans Pelicans",
+            "pick_home": true,
+            "confidence": 0.51,
             "model_accuracy": 0.654
           },
           "spread": {
-            "pick": "DAL +5.5",
-            "pick_home": false,
-            "confidence": 0.579,
-            "spread_line": "NO -5.5",
+            "pick": "NO -7.9",
+            "pick_home": true,
+            "confidence": 0.51,
+            "spread_line": "NO -7.9",
             "model_accuracy": 0.734
           },
           "total": {
-            "pick": "OVER 230",
+            "pick": "OVER 235",
             "pick_over": true,
-            "confidence": 0.66,
-            "total_line": 230,
+            "confidence": 0.575,
+            "total_line": 235,
             "model_accuracy": 0.622
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2025-12-23T05:28:45.670049",
+        "generated_at": "2025-12-23T05:50:23.729141",
         "status": "STATUS_FINAL"
       },
       {
@@ -112,27 +112,27 @@
           "moneyline": {
             "pick": "Denver Nuggets",
             "pick_home": true,
-            "confidence": 0.764,
+            "confidence": 0.615,
             "model_accuracy": 0.654
           },
           "spread": {
-            "pick": "DEN -6.7",
+            "pick": "DEN -4.2",
             "pick_home": true,
-            "confidence": 0.632,
-            "spread_line": "DEN -6.7",
+            "confidence": 0.552,
+            "spread_line": "DEN -4.2",
             "model_accuracy": 0.734
           },
           "total": {
-            "pick": "OVER 230",
+            "pick": "OVER 210",
             "pick_over": true,
-            "confidence": 0.676,
-            "total_line": 230,
+            "confidence": 0.72,
+            "total_line": 210,
             "model_accuracy": 0.622
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2025-12-23T05:28:45.670559",
+        "generated_at": "2025-12-23T05:50:23.729141",
         "status": "STATUS_FINAL"
       },
       {
@@ -145,27 +145,27 @@
           "moneyline": {
             "pick": "Oklahoma City Thunder",
             "pick_home": true,
-            "confidence": 0.52,
+            "confidence": 0.618,
             "model_accuracy": 0.654
           },
           "spread": {
-            "pick": "OKC -6.1",
+            "pick": "OKC -8.0",
             "pick_home": true,
-            "confidence": 0.51,
-            "spread_line": "OKC -6.1",
+            "confidence": 0.554,
+            "spread_line": "OKC -8.0",
             "model_accuracy": 0.734
           },
           "total": {
-            "pick": "OVER 230",
+            "pick": "OVER 235",
             "pick_over": true,
-            "confidence": 0.724,
-            "total_line": 230,
+            "confidence": 0.672,
+            "total_line": 235,
             "model_accuracy": 0.622
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2025-12-23T05:28:45.670559",
+        "generated_at": "2025-12-23T05:50:23.731253",
         "status": "STATUS_FINAL"
       },
       {
@@ -176,29 +176,29 @@
         "away_abbrev": "ORL",
         "predictions": {
           "moneyline": {
-            "pick": "Orlando Magic",
-            "pick_home": false,
-            "confidence": 0.633,
+            "pick": "Golden State Warriors",
+            "pick_home": true,
+            "confidence": 0.594,
             "model_accuracy": 0.654
           },
           "spread": {
-            "pick": "ORL +8.1",
-            "pick_home": false,
-            "confidence": 0.561,
-            "spread_line": "GS -8.1",
+            "pick": "GS -7.1",
+            "pick_home": true,
+            "confidence": 0.543,
+            "spread_line": "GS -7.1",
             "model_accuracy": 0.734
           },
           "total": {
-            "pick": "OVER 220",
+            "pick": "OVER 215",
             "pick_over": true,
-            "confidence": 0.598,
-            "total_line": 220,
+            "confidence": 0.723,
+            "total_line": 215,
             "model_accuracy": 0.622
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2025-12-23T05:28:45.671097",
+        "generated_at": "2025-12-23T05:50:23.731253",
         "status": "STATUS_FINAL"
       },
       {
@@ -211,27 +211,27 @@
           "moneyline": {
             "pick": "Portland Trail Blazers",
             "pick_home": true,
-            "confidence": 0.718,
+            "confidence": 0.582,
             "model_accuracy": 0.654
           },
           "spread": {
-            "pick": "POR -3.2",
+            "pick": "POR -7.2",
             "pick_home": true,
-            "confidence": 0.605,
-            "spread_line": "POR -3.2",
+            "confidence": 0.537,
+            "spread_line": "POR -7.2",
             "model_accuracy": 0.734
           },
           "total": {
-            "pick": "OVER 235",
+            "pick": "OVER 215",
             "pick_over": true,
-            "confidence": 0.631,
-            "total_line": 235,
+            "confidence": 0.574,
+            "total_line": 215,
             "model_accuracy": 0.622
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nba",
-        "generated_at": "2025-12-23T05:28:45.671097",
+        "generated_at": "2025-12-23T05:50:23.732354",
         "status": "STATUS_FINAL"
       }
     ],
@@ -244,29 +244,29 @@
         "away_abbrev": "LAR",
         "predictions": {
           "moneyline": {
-            "pick": "Seattle Seahawks",
-            "pick_home": true,
-            "confidence": 0.618,
+            "pick": "Los Angeles Rams",
+            "pick_home": false,
+            "confidence": 0.675,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "SEA -3.4",
-            "pick_home": true,
-            "confidence": 0.551,
-            "spread_line": "SEA -3.4",
+            "pick": "LAR +3.2",
+            "pick_home": false,
+            "confidence": 0.578,
+            "spread_line": "SEA -3.2",
             "model_accuracy": 0.69
           },
           "total": {
-            "pick": "UNDER 205",
-            "pick_over": false,
-            "confidence": 0.568,
-            "total_line": 205,
+            "pick": "OVER 235",
+            "pick_over": true,
+            "confidence": 0.596,
+            "total_line": 235,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.004404",
+        "generated_at": "2025-12-23T05:50:24.153964",
         "status": "STATUS_FINAL"
       },
       {
@@ -279,27 +279,27 @@
           "moneyline": {
             "pick": "Washington Commanders",
             "pick_home": true,
-            "confidence": 0.67,
+            "confidence": 0.545,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "WSH -3.5",
+            "pick": "WSH -6.3",
             "pick_home": true,
-            "confidence": 0.575,
-            "spread_line": "WSH -3.5",
+            "confidence": 0.519,
+            "spread_line": "WSH -6.3",
             "model_accuracy": 0.69
           },
           "total": {
-            "pick": "OVER 220",
+            "pick": "OVER 210",
             "pick_over": true,
-            "confidence": 0.655,
-            "total_line": 220,
+            "confidence": 0.594,
+            "total_line": 210,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.004404",
+        "generated_at": "2025-12-23T05:50:24.154488",
         "status": "STATUS_FINAL"
       },
       {
@@ -312,27 +312,27 @@
           "moneyline": {
             "pick": "Chicago Bears",
             "pick_home": true,
-            "confidence": 0.528,
+            "confidence": 0.801,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "CHI -7.8",
+            "pick": "CHI -8.0",
             "pick_home": true,
-            "confidence": 0.512,
-            "spread_line": "CHI -7.8",
+            "confidence": 0.647,
+            "spread_line": "CHI -8.0",
             "model_accuracy": 0.69
           },
           "total": {
-            "pick": "OVER 235",
+            "pick": "OVER 230",
             "pick_over": true,
-            "confidence": 0.692,
-            "total_line": 235,
+            "confidence": 0.545,
+            "total_line": 230,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.004916",
+        "generated_at": "2025-12-23T05:50:24.155007",
         "status": "STATUS_FINAL"
       },
       {
@@ -345,27 +345,27 @@
           "moneyline": {
             "pick": "Cleveland Browns",
             "pick_home": true,
-            "confidence": 0.642,
+            "confidence": 0.547,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "CLE -8.4",
+            "pick": "CLE -6.4",
             "pick_home": true,
-            "confidence": 0.562,
-            "spread_line": "CLE -8.4",
+            "confidence": 0.52,
+            "spread_line": "CLE -6.4",
             "model_accuracy": 0.69
           },
           "total": {
-            "pick": "OVER 250",
+            "pick": "OVER 240",
             "pick_over": true,
-            "confidence": 0.602,
-            "total_line": 250,
+            "confidence": 0.546,
+            "total_line": 240,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.004916",
+        "generated_at": "2025-12-23T05:50:24.155007",
         "status": "STATUS_FINAL"
       },
       {
@@ -376,29 +376,29 @@
         "away_abbrev": "LAC",
         "predictions": {
           "moneyline": {
-            "pick": "Los Angeles Chargers",
-            "pick_home": false,
-            "confidence": 0.742,
+            "pick": "Dallas Cowboys",
+            "pick_home": true,
+            "confidence": 0.757,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "LAC +5.1",
-            "pick_home": false,
-            "confidence": 0.612,
-            "spread_line": "DAL -5.1",
+            "pick": "DAL -7.3",
+            "pick_home": true,
+            "confidence": 0.62,
+            "spread_line": "DAL -7.3",
             "model_accuracy": 0.69
           },
           "total": {
-            "pick": "OVER 230",
+            "pick": "OVER 235",
             "pick_over": true,
-            "confidence": 0.692,
-            "total_line": 230,
+            "confidence": 0.668,
+            "total_line": 235,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.005444",
+        "generated_at": "2025-12-23T05:50:24.155539",
         "status": "STATUS_FINAL"
       },
       {
@@ -409,29 +409,29 @@
         "away_abbrev": "KC",
         "predictions": {
           "moneyline": {
-            "pick": "Tennessee Titans",
-            "pick_home": true,
-            "confidence": 0.512,
+            "pick": "Kansas City Chiefs",
+            "pick_home": false,
+            "confidence": 0.563,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "TEN -7.7",
-            "pick_home": true,
-            "confidence": 0.51,
-            "spread_line": "TEN -7.7",
+            "pick": "KC +5.6",
+            "pick_home": false,
+            "confidence": 0.527,
+            "spread_line": "TEN -5.6",
             "model_accuracy": 0.69
           },
           "total": {
-            "pick": "OVER 225",
+            "pick": "OVER 230",
             "pick_over": true,
-            "confidence": 0.62,
-            "total_line": 225,
+            "confidence": 0.634,
+            "total_line": 230,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.005444",
+        "generated_at": "2025-12-23T05:50:24.155539",
         "status": "STATUS_FINAL"
       },
       {
@@ -444,27 +444,27 @@
           "moneyline": {
             "pick": "Cincinnati Bengals",
             "pick_home": false,
-            "confidence": 0.66,
+            "confidence": 0.604,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "CIN +6.7",
+            "pick": "CIN +7.9",
             "pick_home": false,
-            "confidence": 0.57,
-            "spread_line": "MIA -6.7",
+            "confidence": 0.545,
+            "spread_line": "MIA -7.9",
             "model_accuracy": 0.69
           },
           "total": {
-            "pick": "OVER 230",
+            "pick": "OVER 225",
             "pick_over": true,
-            "confidence": 0.692,
-            "total_line": 230,
+            "confidence": 0.657,
+            "total_line": 225,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.005966",
+        "generated_at": "2025-12-23T05:50:24.156077",
         "status": "STATUS_FINAL"
       },
       {
@@ -477,27 +477,27 @@
           "moneyline": {
             "pick": "New Orleans Saints",
             "pick_home": true,
-            "confidence": 0.775,
+            "confidence": 0.543,
             "model_accuracy": 0.651
           },
           "spread": {
             "pick": "NO -4.4",
             "pick_home": true,
-            "confidence": 0.631,
+            "confidence": 0.518,
             "spread_line": "NO -4.4",
             "model_accuracy": 0.69
           },
           "total": {
             "pick": "OVER 235",
             "pick_over": true,
-            "confidence": 0.702,
+            "confidence": 0.662,
             "total_line": 235,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.005966",
+        "generated_at": "2025-12-23T05:50:24.156077",
         "status": "STATUS_FINAL"
       },
       {
@@ -510,27 +510,27 @@
           "moneyline": {
             "pick": "New York Giants",
             "pick_home": true,
-            "confidence": 0.51,
+            "confidence": 0.548,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "NYG -3.1",
+            "pick": "NYG -7.1",
             "pick_home": true,
-            "confidence": 0.51,
-            "spread_line": "NYG -3.1",
+            "confidence": 0.52,
+            "spread_line": "NYG -7.1",
             "model_accuracy": 0.69
           },
           "total": {
-            "pick": "OVER 225",
-            "pick_over": true,
-            "confidence": 0.567,
-            "total_line": 225,
+            "pick": "UNDER 210",
+            "pick_over": false,
+            "confidence": 0.604,
+            "total_line": 210,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.006478",
+        "generated_at": "2025-12-23T05:50:24.156595",
         "status": "STATUS_FINAL"
       },
       {
@@ -541,29 +541,29 @@
         "away_abbrev": "TB",
         "predictions": {
           "moneyline": {
-            "pick": "Carolina Panthers",
-            "pick_home": true,
-            "confidence": 0.819,
+            "pick": "Tampa Bay Buccaneers",
+            "pick_home": false,
+            "confidence": 0.775,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "CAR -4.2",
-            "pick_home": true,
-            "confidence": 0.66,
-            "spread_line": "CAR -4.2",
+            "pick": "TB +5.1",
+            "pick_home": false,
+            "confidence": 0.631,
+            "spread_line": "CAR -5.1",
             "model_accuracy": 0.69
           },
           "total": {
             "pick": "OVER 230",
             "pick_over": true,
-            "confidence": 0.641,
+            "confidence": 0.678,
             "total_line": 230,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.006478",
+        "generated_at": "2025-12-23T05:50:24.156595",
         "status": "STATUS_FINAL"
       },
       {
@@ -574,29 +574,29 @@
         "away_abbrev": "JAX",
         "predictions": {
           "moneyline": {
-            "pick": "Jacksonville Jaguars",
-            "pick_home": false,
-            "confidence": 0.566,
+            "pick": "Denver Broncos",
+            "pick_home": true,
+            "confidence": 0.731,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "JAX +5.0",
-            "pick_home": false,
-            "confidence": 0.528,
+            "pick": "DEN -5.0",
+            "pick_home": true,
+            "confidence": 0.606,
             "spread_line": "DEN -5.0",
             "model_accuracy": 0.69
           },
           "total": {
-            "pick": "OVER 225",
+            "pick": "OVER 210",
             "pick_over": true,
-            "confidence": 0.568,
-            "total_line": 225,
+            "confidence": 0.639,
+            "total_line": 210,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.006478",
+        "generated_at": "2025-12-23T05:50:24.157142",
         "status": "STATUS_FINAL"
       },
       {
@@ -609,27 +609,27 @@
           "moneyline": {
             "pick": "Arizona Cardinals",
             "pick_home": true,
-            "confidence": 0.616,
+            "confidence": 0.816,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "ARI -6.6",
+            "pick": "ARI -2.7",
             "pick_home": true,
-            "confidence": 0.55,
-            "spread_line": "ARI -6.6",
+            "confidence": 0.658,
+            "spread_line": "ARI -2.7",
             "model_accuracy": 0.69
           },
           "total": {
-            "pick": "OVER 240",
+            "pick": "OVER 220",
             "pick_over": true,
-            "confidence": 0.67,
-            "total_line": 240,
+            "confidence": 0.552,
+            "total_line": 220,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.006992",
+        "generated_at": "2025-12-23T05:50:24.157142",
         "status": "STATUS_FINAL"
       },
       {
@@ -640,29 +640,29 @@
         "away_abbrev": "PIT",
         "predictions": {
           "moneyline": {
-            "pick": "Detroit Lions",
-            "pick_home": true,
-            "confidence": 0.724,
+            "pick": "Pittsburgh Steelers",
+            "pick_home": false,
+            "confidence": 0.51,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "DET -6.6",
-            "pick_home": true,
-            "confidence": 0.602,
-            "spread_line": "DET -6.6",
+            "pick": "PIT +6.7",
+            "pick_home": false,
+            "confidence": 0.51,
+            "spread_line": "DET -6.7",
             "model_accuracy": 0.69
           },
           "total": {
             "pick": "OVER 235",
             "pick_over": true,
-            "confidence": 0.565,
+            "confidence": 0.563,
             "total_line": 235,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.006992",
+        "generated_at": "2025-12-23T05:50:24.157657",
         "status": "STATUS_FINAL"
       },
       {
@@ -673,29 +673,29 @@
         "away_abbrev": "LV",
         "predictions": {
           "moneyline": {
-            "pick": "Las Vegas Raiders",
-            "pick_home": false,
-            "confidence": 0.511,
+            "pick": "Houston Texans",
+            "pick_home": true,
+            "confidence": 0.682,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "LV +3.5",
-            "pick_home": false,
-            "confidence": 0.51,
-            "spread_line": "HOU -3.5",
+            "pick": "HOU -4.3",
+            "pick_home": true,
+            "confidence": 0.581,
+            "spread_line": "HOU -4.3",
             "model_accuracy": 0.69
           },
           "total": {
-            "pick": "OVER 220",
+            "pick": "OVER 225",
             "pick_over": true,
-            "confidence": 0.592,
-            "total_line": 220,
+            "confidence": 0.593,
+            "total_line": 225,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.007502",
+        "generated_at": "2025-12-23T05:50:24.157657",
         "status": "STATUS_FINAL"
       },
       {
@@ -706,29 +706,29 @@
         "away_abbrev": "NE",
         "predictions": {
           "moneyline": {
-            "pick": "Baltimore Ravens",
-            "pick_home": true,
-            "confidence": 0.573,
+            "pick": "New England Patriots",
+            "pick_home": false,
+            "confidence": 0.543,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "BAL -6.9",
-            "pick_home": true,
-            "confidence": 0.531,
-            "spread_line": "BAL -6.9",
+            "pick": "NE +8.2",
+            "pick_home": false,
+            "confidence": 0.518,
+            "spread_line": "BAL -8.2",
             "model_accuracy": 0.69
           },
           "total": {
             "pick": "OVER 225",
             "pick_over": true,
-            "confidence": 0.607,
+            "confidence": 0.704,
             "total_line": 225,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.007502",
+        "generated_at": "2025-12-23T05:50:24.158173",
         "status": "STATUS_FINAL"
       },
       {
@@ -739,29 +739,29 @@
         "away_abbrev": "SF",
         "predictions": {
           "moneyline": {
-            "pick": "Indianapolis Colts",
-            "pick_home": true,
-            "confidence": 0.617,
+            "pick": "San Francisco 49ers",
+            "pick_home": false,
+            "confidence": 0.556,
             "model_accuracy": 0.651
           },
           "spread": {
-            "pick": "IND -8.4",
-            "pick_home": true,
-            "confidence": 0.55,
-            "spread_line": "IND -8.4",
+            "pick": "SF +7.5",
+            "pick_home": false,
+            "confidence": 0.524,
+            "spread_line": "IND -7.5",
             "model_accuracy": 0.69
           },
           "total": {
-            "pick": "OVER 240",
+            "pick": "OVER 250",
             "pick_over": true,
-            "confidence": 0.665,
-            "total_line": 240,
+            "confidence": 0.555,
+            "total_line": 250,
             "model_accuracy": 0.563
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nfl",
-        "generated_at": "2025-12-23T05:28:46.007502",
+        "generated_at": "2025-12-23T05:50:24.158695",
         "status": "STATUS_FINAL"
       }
     ],
@@ -774,29 +774,29 @@
         "away_abbrev": "STL",
         "predictions": {
           "moneyline": {
-            "pick": "Tampa Bay Lightning",
-            "pick_home": true,
-            "confidence": 0.632,
+            "pick": "St. Louis Blues",
+            "pick_home": false,
+            "confidence": 0.795,
             "model_accuracy": 0.72
           },
           "spread": {
-            "pick": "TB -4.8",
-            "pick_home": true,
-            "confidence": 0.549,
-            "spread_line": "TB -4.8",
-            "model_accuracy": 0.664
+            "pick": "STL +5.5",
+            "pick_home": false,
+            "confidence": 0.623,
+            "spread_line": "TB -5.5",
+            "model_accuracy": 0.674
           },
           "total": {
-            "pick": "OVER 220",
+            "pick": "OVER 240",
             "pick_over": true,
-            "confidence": 0.659,
-            "total_line": 220,
+            "confidence": 0.548,
+            "total_line": 240,
             "model_accuracy": 0.601
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nhl",
-        "generated_at": "2025-12-23T05:28:46.414051",
+        "generated_at": "2025-12-23T05:50:24.606211",
         "status": "STATUS_FINAL"
       },
       {
@@ -807,29 +807,29 @@
         "away_abbrev": "VAN",
         "predictions": {
           "moneyline": {
-            "pick": "Vancouver Canucks",
-            "pick_home": false,
-            "confidence": 0.611,
+            "pick": "Philadelphia Flyers",
+            "pick_home": true,
+            "confidence": 0.598,
             "model_accuracy": 0.72
           },
           "spread": {
-            "pick": "VAN +6.4",
-            "pick_home": false,
-            "confidence": 0.542,
-            "spread_line": "PHI -6.4",
-            "model_accuracy": 0.664
+            "pick": "PHI -3.7",
+            "pick_home": true,
+            "confidence": 0.537,
+            "spread_line": "PHI -3.7",
+            "model_accuracy": 0.674
           },
           "total": {
-            "pick": "OVER 235",
+            "pick": "OVER 245",
             "pick_over": true,
-            "confidence": 0.554,
-            "total_line": 235,
+            "confidence": 0.72,
+            "total_line": 245,
             "model_accuracy": 0.601
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nhl",
-        "generated_at": "2025-12-23T05:28:46.414562",
+        "generated_at": "2025-12-23T05:50:24.606731",
         "status": "STATUS_FINAL"
       },
       {
@@ -840,29 +840,29 @@
         "away_abbrev": "SEA",
         "predictions": {
           "moneyline": {
-            "pick": "Seattle Kraken",
-            "pick_home": false,
-            "confidence": 0.793,
+            "pick": "Anaheim Ducks",
+            "pick_home": true,
+            "confidence": 0.634,
             "model_accuracy": 0.72
           },
           "spread": {
-            "pick": "SEA +4.1",
-            "pick_home": false,
-            "confidence": 0.62,
-            "spread_line": "ANA -4.1",
-            "model_accuracy": 0.664
+            "pick": "ANA -5.7",
+            "pick_home": true,
+            "confidence": 0.551,
+            "spread_line": "ANA -5.7",
+            "model_accuracy": 0.674
           },
           "total": {
-            "pick": "OVER 230",
+            "pick": "OVER 235",
             "pick_over": true,
-            "confidence": 0.613,
-            "total_line": 230,
+            "confidence": 0.616,
+            "total_line": 235,
             "model_accuracy": 0.601
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nhl",
-        "generated_at": "2025-12-23T05:28:46.414562",
+        "generated_at": "2025-12-23T05:50:24.606731",
         "status": "STATUS_FINAL"
       },
       {
@@ -873,29 +873,29 @@
         "away_abbrev": "CBJ",
         "predictions": {
           "moneyline": {
-            "pick": "Los Angeles Kings",
-            "pick_home": true,
-            "confidence": 0.579,
+            "pick": "Columbus Blue Jackets",
+            "pick_home": false,
+            "confidence": 0.564,
             "model_accuracy": 0.72
           },
           "spread": {
-            "pick": "LA -7.1",
-            "pick_home": true,
-            "confidence": 0.529,
-            "spread_line": "LA -7.1",
-            "model_accuracy": 0.664
+            "pick": "CBJ +5.0",
+            "pick_home": false,
+            "confidence": 0.524,
+            "spread_line": "LA -5.0",
+            "model_accuracy": 0.674
           },
           "total": {
             "pick": "OVER 240",
             "pick_over": true,
-            "confidence": 0.587,
+            "confidence": 0.578,
             "total_line": 240,
             "model_accuracy": 0.601
           }
         },
         "model_version": "v6_behavioral",
         "sport": "nhl",
-        "generated_at": "2025-12-23T05:28:46.415079",
+        "generated_at": "2025-12-23T05:50:24.606731",
         "status": "STATUS_FINAL"
       }
     ],
@@ -910,27 +910,27 @@
           "moneyline": {
             "pick": "Baltimore Orioles",
             "pick_home": true,
-            "confidence": 0.593,
-            "model_accuracy": 0.534
+            "confidence": 0.51,
+            "model_accuracy": 0.581
           },
           "spread": {
-            "pick": "BAL -3.5",
+            "pick": "BAL -5.9",
             "pick_home": true,
-            "confidence": 0.544,
-            "spread_line": "BAL -3.5",
+            "confidence": 0.51,
+            "spread_line": "BAL -5.9",
             "model_accuracy": 0.62
           },
           "total": {
-            "pick": "OVER 245",
+            "pick": "OVER 220",
             "pick_over": true,
-            "confidence": 0.674,
-            "total_line": 245,
+            "confidence": 0.647,
+            "total_line": 220,
             "model_accuracy": 0.584
           }
         },
         "model_version": "v6_behavioral",
         "sport": "mlb",
-        "generated_at": "2025-12-23T05:28:46.832778",
+        "generated_at": "2025-12-23T05:50:25.101369",
         "status": "STATUS_SCHEDULED"
       },
       {
@@ -943,27 +943,27 @@
           "moneyline": {
             "pick": "Chicago Cubs",
             "pick_home": true,
-            "confidence": 0.571,
-            "model_accuracy": 0.534
+            "confidence": 0.689,
+            "model_accuracy": 0.581
           },
           "spread": {
-            "pick": "CHC -6.3",
+            "pick": "CHC -2.9",
             "pick_home": true,
-            "confidence": 0.533,
-            "spread_line": "CHC -6.3",
+            "confidence": 0.586,
+            "spread_line": "CHC -2.9",
             "model_accuracy": 0.62
           },
           "total": {
-            "pick": "OVER 240",
+            "pick": "OVER 235",
             "pick_over": true,
-            "confidence": 0.551,
-            "total_line": 240,
+            "confidence": 0.701,
+            "total_line": 235,
             "model_accuracy": 0.584
           }
         },
         "model_version": "v6_behavioral",
         "sport": "mlb",
-        "generated_at": "2025-12-23T05:28:46.833303",
+        "generated_at": "2025-12-23T05:50:25.101369",
         "status": "STATUS_SCHEDULED"
       },
       {
@@ -974,29 +974,29 @@
         "away_abbrev": "ARI",
         "predictions": {
           "moneyline": {
-            "pick": "Colorado Rockies",
-            "pick_home": true,
-            "confidence": 0.658,
-            "model_accuracy": 0.534
+            "pick": "Arizona Diamondbacks",
+            "pick_home": false,
+            "confidence": 0.661,
+            "model_accuracy": 0.581
           },
           "spread": {
-            "pick": "COL -2.9",
-            "pick_home": true,
-            "confidence": 0.577,
-            "spread_line": "COL -2.9",
+            "pick": "ARI +7.5",
+            "pick_home": false,
+            "confidence": 0.572,
+            "spread_line": "COL -7.5",
             "model_accuracy": 0.62
           },
           "total": {
-            "pick": "OVER 225",
+            "pick": "OVER 230",
             "pick_over": true,
-            "confidence": 0.695,
-            "total_line": 225,
+            "confidence": 0.697,
+            "total_line": 230,
             "model_accuracy": 0.584
           }
         },
         "model_version": "v6_behavioral",
         "sport": "mlb",
-        "generated_at": "2025-12-23T05:28:46.833303",
+        "generated_at": "2025-12-23T05:50:25.102375",
         "status": "STATUS_SCHEDULED"
       },
       {
@@ -1009,27 +1009,27 @@
           "moneyline": {
             "pick": "Seattle Mariners",
             "pick_home": true,
-            "confidence": 0.582,
-            "model_accuracy": 0.534
+            "confidence": 0.544,
+            "model_accuracy": 0.581
           },
           "spread": {
-            "pick": "SEA -3.5",
+            "pick": "SEA -3.6",
             "pick_home": true,
-            "confidence": 0.539,
-            "spread_line": "SEA -3.5",
+            "confidence": 0.519,
+            "spread_line": "SEA -3.6",
             "model_accuracy": 0.62
           },
           "total": {
-            "pick": "OVER 225",
-            "pick_over": true,
-            "confidence": 0.547,
-            "total_line": 225,
+            "pick": "UNDER 205",
+            "pick_over": false,
+            "confidence": 0.684,
+            "total_line": 205,
             "model_accuracy": 0.584
           }
         },
         "model_version": "v6_behavioral",
         "sport": "mlb",
-        "generated_at": "2025-12-23T05:28:46.833827",
+        "generated_at": "2025-12-23T05:50:25.102881",
         "status": "STATUS_SCHEDULED"
       },
       {
@@ -1040,29 +1040,29 @@
         "away_abbrev": "KC",
         "predictions": {
           "moneyline": {
-            "pick": "Kansas City Royals",
-            "pick_home": false,
-            "confidence": 0.58,
-            "model_accuracy": 0.534
+            "pick": "Texas Rangers",
+            "pick_home": true,
+            "confidence": 0.624,
+            "model_accuracy": 0.581
           },
           "spread": {
-            "pick": "KC +3.4",
-            "pick_home": false,
-            "confidence": 0.538,
-            "spread_line": "TEX -3.4",
+            "pick": "TEX -7.0",
+            "pick_home": true,
+            "confidence": 0.555,
+            "spread_line": "TEX -7.0",
             "model_accuracy": 0.62
           },
           "total": {
-            "pick": "OVER 225",
+            "pick": "OVER 235",
             "pick_over": true,
-            "confidence": 0.69,
-            "total_line": 225,
+            "confidence": 0.568,
+            "total_line": 235,
             "model_accuracy": 0.584
           }
         },
         "model_version": "v6_behavioral",
         "sport": "mlb",
-        "generated_at": "2025-12-23T05:28:46.834337",
+        "generated_at": "2025-12-23T05:50:25.102881",
         "status": "STATUS_SCHEDULED"
       }
     ],
@@ -1077,27 +1077,27 @@
           "moneyline": {
             "pick": "Manchester United",
             "pick_home": true,
-            "confidence": 0.745,
+            "confidence": 0.62,
             "model_accuracy": 0.67
           },
           "spread": {
-            "pick": "MAN -6.0",
+            "pick": "MAN -5.2",
             "pick_home": true,
-            "confidence": 0.62,
+            "confidence": 0.555,
             "spread_line": "MAN +145",
             "model_accuracy": 0.753
           },
           "total": {
             "pick": "OVER 2.5",
             "pick_over": true,
-            "confidence": 0.576,
+            "confidence": 0.657,
             "total_line": 2.5,
             "model_accuracy": 0.615
           }
         },
         "model_version": "v6_behavioral",
         "sport": "soccer",
-        "generated_at": "2025-12-23T05:28:47.232347",
+        "generated_at": "2025-12-23T05:50:25.569534",
         "status": "STATUS_SCHEDULED"
       }
     ]
@@ -1115,11 +1115,11 @@
     },
     "nhl": {
       "moneyline": 0.72,
-      "spread": 0.664,
+      "spread": 0.674,
       "total": 0.601
     },
     "mlb": {
-      "moneyline": 0.534,
+      "moneyline": 0.581,
       "spread": 0.62,
       "total": 0.584
     },
