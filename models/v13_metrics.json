@@ -1,0 +1,55 @@
+{
+  "moneyline": {
+    "accuracy": 0.611353711790393,
+    "auc": 0.6425517019545515,
+    "features": [
+      "win_pct_diff",
+      "net_rating_diff",
+      "pts_diff",
+      "fg_pct_diff",
+      "fg3_pct_diff",
+      "reb_diff",
+      "ast_diff",
+      "win_trend_diff",
+      "home_win_pct",
+      "away_win_pct",
+      "home_net",
+      "away_net"
+    ]
+  },
+  "spread": {
+    "accuracy": 0.5739238927011853,
+    "auc": 0.5655388688403171,
+    "features": [
+      "net_rating_diff",
+      "pts_diff",
+      "defense_diff",
+      "consistency",
+      "fg_pct_diff",
+      "reb_diff",
+      "pts_trend_diff",
+      "home_net",
+      "away_net",
+      "mismatch"
+    ]
+  },
+  "total": {
+    "accuracy": 0.619463505926388,
+    "auc": 0.6038777870067262,
+    "features": [
+      "combined_pace",
+      "home_pace",
+      "away_pace",
+      "pace_diff",
+      "combined_pts",
+      "combined_pts_against",
+      "total_fg_pct",
+      "total_fg3_pct",
+      "total_variance",
+      "defense_allowing",
+      "pts_trend_combined",
+      "expected_total",
+      "rebounding_total"
+    ]
+  }
+}
