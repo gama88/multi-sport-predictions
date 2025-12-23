@@ -791,8 +791,22 @@
         const sportNames = {
             'nba': '🏀 NBA', 'ncaa_basketball': '🏀 NCAA Basketball', 'nfl': '🏈 NFL',
             'ncaa_football': '🏈 College Football', 'nhl': '🏒 NHL', 'mlb': '⚾ MLB',
-            'tennis': '🎾 Tennis', 'soccer': '⚽ Premier League'
+            'tennis': '🎾 Tennis', 'soccer': '⚽ Soccer (All Leagues)'
         };
+
+        // Soccer leagues to fetch
+        const soccerLeagues = [
+            { id: 'eng.1', name: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League' },
+            { id: 'esp.1', name: '🇪🇸 La Liga' },
+            { id: 'ger.1', name: '🇩🇪 Bundesliga' },
+            { id: 'ita.1', name: '🇮🇹 Serie A' },
+            { id: 'fra.1', name: '🇫🇷 Ligue 1' },
+            { id: 'uefa.champions', name: '🏆 Champions League' },
+            { id: 'usa.1', name: '🇺🇸 MLS' },
+            { id: 'por.1', name: '🇵🇹 Primeira Liga' },
+            { id: 'ned.1', name: '🇳🇱 Eredivisie' },
+            { id: 'mex.1', name: '🇲🇽 Liga MX' }
+        ];
 
         // Cache for predictions - keeps them consistent
         const predictionCache = {};
@@ -1396,9 +1410,41 @@
             container.innerHTML = `<div class="loading"><div class="loading-spinner"></div>Loading ${sportNames[currentSport]} games...</div>`;
 
             try {
-                const response = await fetch(`${ESPN_BASE}${currentEndpoint}`);
-                const data = await response.json();
-                const events = data.events || [];
+                let events = [];
+
+                // For soccer, fetch from multiple leagues
+                if (currentSport === 'soccer') {
+                    const allGames = await Promise.allSettled(
+                        soccerLeagues.map(async (league) => {
+                            try {
+                                const response = await fetch(`${ESPN_BASE}/soccer/${league.id}/scoreboard`);
+                                const data = await response.json();
+                                // Add league info to each event
+                                return (data.events || []).map(e => ({ ...e, leagueName: league.name, leagueId: league.id }));
+                            } catch (e) {
+                                return [];
+                            }
+                        })
+                    );
+                    // Combine all successful results
+                    events = allGames
+                        .filter(r => r.status === 'fulfilled')
+                        .flatMap(r => r.value);
+
+                    // Sort by: live games first, then by date
+                    events.sort((a, b) => {
+                        const aLive = a.status?.type?.name?.includes('IN_PROGRESS');
+                        const bLive = b.status?.type?.name?.includes('IN_PROGRESS');
+                        if (aLive && !bLive) return -1;
+                        if (!aLive && bLive) return 1;
+                        return new Date(a.date) - new Date(b.date);
+                    });
+                } else {
+                    // Standard single-league fetch
+                    const response = await fetch(`${ESPN_BASE}${currentEndpoint}`);
+                    const data = await response.json();
+                    events = data.events || [];
+                }
 
                 // Check for finished games and resolve pending predictions
                 checkFinishedGames(events);
@@ -1550,7 +1596,7 @@
                     <div class="game-card ${isLive ? 'live' : ''} ${isFinal ? 'final' : ''}" data-event-id="${event.id}">
                         <div class="game-status">
                             ${statusHtml}
-                            <span style="font-size:0.7rem;color:var(--text-secondary)">${broadcast ? '📺 ' + broadcast : ''}</span>
+                            <span style="font-size:0.7rem;color:var(--text-secondary)">${event.leagueName ? event.leagueName + ' • ' : ''}${broadcast ? '📺 ' + broadcast : ''}</span>
                         </div>
                         
                         <!-- Venue & Odds Row -->
