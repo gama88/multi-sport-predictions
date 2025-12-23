@@ -793,6 +793,34 @@
         // Cache for predictions - keeps them consistent
         const predictionCache = {};
 
+        // Real predictions from trained models
+        let realPredictions = {};
+        let predictionsLoaded = false;
+
+        // Load real predictions from JSON
+        async function loadRealPredictions() {
+            try {
+                const response = await fetch('data/predictions.json');
+                const data = await response.json();
+                realPredictions = data.predictions || {};
+                predictionsLoaded = true;
+                console.log('✅ Loaded real predictions:', Object.keys(realPredictions).map(k => `${k}: ${realPredictions[k].length}`).join(', '));
+                return true;
+            } catch (e) {
+                console.warn('⚠️ Could not load predictions.json, using fallback:', e.message);
+                predictionsLoaded = false;
+                return false;
+            }
+        }
+
+        // Get real prediction for a game (from trained models)
+        function getRealPrediction(gameId, sport) {
+            if (!predictionsLoaded || !realPredictions[sport]) {
+                return null;
+            }
+            return realPredictions[sport].find(p => p.game_id === gameId);
+        }
+
         // Seeded random number generator (deterministic based on seed)
         function seededRandom(seed) {
             let hash = 0;
@@ -1340,17 +1368,35 @@
                     dateDisplay = `${fullDateStr} ${timeStr}`;
                 }
 
-                // Generate CONSISTENT prediction using game ID (same game = same prediction)
-                const baseAcc = sportAccuracy.moneyline || 0.55;
+                // Try to get REAL prediction from trained models
                 const gameId = event.id || `${home.team?.id}_${away.team?.id}`;
-                const prediction = getPrediction(
-                    gameId,
-                    home.team?.abbreviation || 'HOME',
-                    away.team?.abbreviation || 'AWAY',
-                    baseAcc
-                );
-                const predTeam = prediction.team;
-                const predConfidence = prediction.confidence;
+                const realPred = getRealPrediction(gameId, currentSport);
+
+                let predTeam, predConfidence, prediction, isRealPrediction;
+
+                if (realPred) {
+                    // USE REAL PREDICTION FROM TRAINED MODEL
+                    predTeam = realPred.pick;
+                    predConfidence = realPred.confidence;
+                    prediction = {
+                        team: realPred.pick,
+                        confidence: realPred.confidence,
+                        pickHome: realPred.pick_home
+                    };
+                    isRealPrediction = true;
+                } else {
+                    // FALLBACK: Generate consistent prediction using game ID
+                    const baseAcc = sportAccuracy.moneyline || 0.55;
+                    prediction = getPrediction(
+                        gameId,
+                        home.team?.abbreviation || 'HOME',
+                        away.team?.abbreviation || 'AWAY',
+                        baseAcc
+                    );
+                    predTeam = prediction.team;
+                    predConfidence = prediction.confidence;
+                    isRealPrediction = false;
+                }
 
                 let statusHtml = '';
                 if (isLive) {
@@ -1478,16 +1524,24 @@
                         ${!isFinal ? `
                         <div class="game-prediction" style="cursor:pointer;transition:all 0.2s" 
                             onclick="trackGamePrediction('${gameId}', '${currentSport}', 'moneyline', '${predTeam}', ${predConfidence})"
-                            title="Click to track this prediction">
-                            <span>🎯 AI Pick: <strong>${predTeam}</strong></span>
+                            title="${isRealPrediction ? 'Real prediction from V6 trained model' : 'Simulated prediction'} - Click to track">
+                            <span>
+                                ${isRealPrediction ? '🤖' : '🎯'} AI Pick: <strong>${predTeam}</strong>
+                                ${isRealPrediction ? '<span style="font-size:0.55rem;background:var(--accent-primary);color:white;padding:0.1rem 0.3rem;border-radius:4px;margin-left:0.3rem">V6 MODEL</span>' : ''}
+                            </span>
                             <span class="prediction-badge">${(predConfidence * 100).toFixed(0)}%</span>
                             <span style="font-size:0.6rem;opacity:0.6;margin-left:0.5rem">📌</span>
                         </div>
                         ` : `
                         <div class="game-prediction" style="background:${prediction.pickHome === homeWins ? 'rgba(16, 185, 129, 0.15)' : 'rgba(239, 68, 68, 0.15)'};border-radius:8px;padding:0.5rem">
-                            <span>
-                                ${prediction.pickHome === homeWins ? '✅' : '❌'} 
-                                AI picked <strong>${predTeam}</strong> (${(predConfidence * 100).toFixed(0)}%)
+                            <span style="display:flex;flex-direction:column;gap:0.2rem">
+                                <span style="font-size:0.55rem;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.5px">
+                                    📜 Past Prediction ${isRealPrediction ? '(V6 Model)' : ''}
+                                </span>
+                                <span>
+                                    ${prediction.pickHome === homeWins ? '✅' : '❌'} 
+                                    Picked <strong>${predTeam}</strong> (${(predConfidence * 100).toFixed(0)}%)
+                                </span>
                             </span>
                             <span style="font-weight:700;color:${prediction.pickHome === homeWins ? 'var(--accent-green)' : 'var(--accent-red)'}">
                                 ${prediction.pickHome === homeWins ? 'WON' : 'LOST'}
@@ -1941,10 +1995,14 @@
         // Auto-refresh every 30 seconds
         setInterval(loadGames, 30000);
 
-        // Initial load
-        loadGames();
-        updatePicks();
-        updateModelStats();
+        // Initial load - first load real predictions, then games
+        async function init() {
+            await loadRealPredictions();
+            loadGames();
+            updatePicks();
+            updateModelStats();
+        }
+        init();
     </script>
 </body>
 
