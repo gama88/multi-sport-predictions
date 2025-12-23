@@ -1,0 +1,110 @@
+{
+  "nba": {
+    "moneyline": {
+      "v6": 0.654,
+      "specialized": 0.6105590062111801,
+      "improvement": -4.344099378881994,
+      "best": "v6"
+    },
+    "spread": {
+      "v6": 0.734,
+      "specialized": 0.562111801242236,
+      "improvement": -17.188819875776396,
+      "best": "v6"
+    },
+    "total": {
+      "v6": 0.55,
+      "specialized": 0.622360248447205,
+      "improvement": 7.23602484472049,
+      "best": "specialized"
+    }
+  },
+  "nfl": {
+    "moneyline": {
+      "v6": 0.651,
+      "specialized": 0.6372093023255814,
+      "improvement": -1.379069767441865,
+      "best": "v6"
+    },
+    "spread": {
+      "v6": 0.652,
+      "specialized": 0.541860465116279,
+      "improvement": -11.013953488372097,
+      "best": "v6"
+    },
+    "total": {
+      "v6": 0.53,
+      "specialized": 0.5627906976744186,
+      "improvement": 3.2790697674418556,
+      "best": "specialized"
+    }
+  },
+  "nhl": {
+    "moneyline": {
+      "v6": 0.512,
+      "specialized": 0.720108695652174,
+      "improvement": 20.810869565217395,
+      "best": "specialized"
+    },
+    "spread": {
+      "v6": 0.591,
+      "specialized": 0.5360054347826086,
+      "improvement": -5.499456521739132,
+      "best": "v6"
+    },
+    "total": {
+      "v6": 0.56,
+      "specialized": 0.6005434782608695,
+      "improvement": 4.054347826086946,
+      "best": "specialized"
+    }
+  },
+  "mlb": {
+    "moneyline": {
+      "v6": 0.532,
+      "specialized": 0.5336105336105336,
+      "improvement": 0.16105336105335377,
+      "best": "specialized"
+    },
+    "spread": {
+      "v6": 0.556,
+      "specialized": 0.5294525294525294,
+      "improvement": -2.654747054747064,
+      "best": "v6"
+    },
+    "total": {
+      "v6": 0.53,
+      "specialized": 0.5835065835065835,
+      "improvement": 5.350658350658344,
+      "best": "specialized"
+    }
+  },
+  "soccer": {
+    "moneyline": {
+      "v6": 0.643,
+      "specialized": 0.6284527010510877,
+      "improvement": -1.4547298948912268,
+      "best": "v6"
+    },
+    "spread": {
+      "v6": 0.753,
+      "specialized": 0.5980200439990222,
+      "improvement": -15.49799560009778,
+      "best": "v6"
+    },
+    "total": {
+      "v6": 0.55,
+      "specialized": 0.6152529943779027,
+      "improvement": 6.525299437790267,
+      "best": "specialized"
+    }
+  },
+  "tennis": {
+    "moneyline": {
+      "v6": 0.628,
+      "specialized": 0.6223091976516634,
+      "improvement": -0.5690802348336632,
+      "best": "v6"
+    }
+  }
+}
