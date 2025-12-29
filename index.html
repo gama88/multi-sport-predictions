@@ -598,6 +598,439 @@
             font-size: 0.75rem;
             border-top: 1px solid var(--border-color);
         }
+
+        /* ========================================
+           MOBILE RESPONSIVE STYLES
+           ======================================== */
+
+        /* Tablet breakpoint */
+        @media (max-width: 768px) {
+            /* Header - Stack vertically on tablets */
+            .header {
+                flex-direction: column;
+                padding: 1rem;
+                gap: 0.75rem;
+                text-align: center;
+            }
+
+            .header h1 {
+                font-size: 1.25rem;
+            }
+
+            .header-stats {
+                gap: 0.75rem;
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .stat-item {
+                padding: 0.4rem 0.75rem;
+                min-width: 70px;
+            }
+
+            .stat-value {
+                font-size: 1.1rem;
+            }
+
+            .stat-label {
+                font-size: 0.6rem;
+            }
+
+            /* Navigation - Better touch targets */
+            .nav-tabs {
+                padding: 0.5rem;
+                gap: 0.4rem;
+            }
+
+            .nav-tab {
+                padding: 0.75rem 1rem;
+                font-size: 0.85rem;
+                min-height: 44px; /* iOS touch target minimum */
+            }
+
+            /* Main content */
+            .main-content {
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            /* Sections */
+            .section {
+                padding: 1rem;
+                border-radius: 12px;
+            }
+
+            .section-title {
+                font-size: 1rem;
+            }
+
+            /* Game cards */
+            .game-card {
+                padding: 0.875rem;
+            }
+
+            .team-name {
+                font-size: 0.85rem;
+            }
+
+            .team-score {
+                font-size: 1.2rem;
+            }
+
+            /* Picks tabs - Wrap to 2 rows */
+            .picks-tabs {
+                flex-wrap: wrap;
+                gap: 0.4rem;
+            }
+
+            .picks-tab {
+                flex: 0 0 calc(33.33% - 0.3rem);
+                padding: 0.6rem 0.4rem;
+                font-size: 0.7rem;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /* Pick cards */
+            .pick-card {
+                padding: 0.75rem;
+            }
+
+            .pick-team {
+                font-size: 0.85rem;
+            }
+
+            .confidence-value {
+                font-size: 1.1rem;
+            }
+
+            /* Parlay cards */
+            .parlay-card {
+                padding: 0.875rem;
+            }
+
+            .parlay-odds {
+                font-size: 1.1rem;
+            }
+
+            /* Model stats grid */
+            .model-stats {
+                gap: 0.5rem;
+            }
+
+            .model-stat {
+                padding: 0.75rem;
+            }
+
+            .model-stat-value {
+                font-size: 1.2rem;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 0.875rem;
+                font-size: 0.7rem;
+            }
+        }
+
+        /* Phone breakpoint */
+        @media (max-width: 480px) {
+            /* Header - Compact for phones */
+            .header {
+                padding: 0.875rem;
+                gap: 0.5rem;
+            }
+
+            .header h1 {
+                font-size: 1.1rem;
+            }
+
+            .header-stats {
+                gap: 0.5rem;
+            }
+
+            .stat-item {
+                padding: 0.35rem 0.5rem;
+                min-width: 60px;
+            }
+
+            .stat-value {
+                font-size: 0.95rem;
+            }
+
+            .stat-label {
+                font-size: 0.55rem;
+            }
+
+            /* Navigation - Smaller on phones */
+            .nav-tabs {
+                padding: 0.4rem;
+                gap: 0.3rem;
+            }
+
+            .nav-tab {
+                padding: 0.6rem 0.75rem;
+                font-size: 0.75rem;
+            }
+
+            /* Main content - Tighter spacing */
+            .main-content {
+                padding: 0.75rem;
+                gap: 0.75rem;
+            }
+
+            /* Sections */
+            .section {
+                padding: 0.875rem;
+                border-radius: 10px;
+            }
+
+            .section-header {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: flex-start;
+            }
+
+            .section-title {
+                font-size: 0.95rem;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 0.6rem;
+                font-size: 0.8rem;
+            }
+
+            /* Game cards */
+            .game-card {
+                padding: 0.75rem;
+                border-radius: 10px;
+            }
+
+            .game-status {
+                font-size: 0.7rem;
+            }
+
+            .team-logo {
+                width: 24px;
+                height: 24px;
+                font-size: 0.6rem;
+            }
+
+            .team-name {
+                font-size: 0.8rem;
+                max-width: 120px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .team-record {
+                font-size: 0.65rem;
+            }
+
+            .team-score {
+                font-size: 1.1rem;
+            }
+
+            .game-prediction {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: flex-start;
+            }
+
+            .prediction-badge {
+                font-size: 0.7rem;
+            }
+
+            /* Picks tabs - Stack differently on small phones */
+            .picks-tabs {
+                gap: 0.3rem;
+            }
+
+            .picks-tab {
+                flex: 0 0 calc(33.33% - 0.25rem);
+                padding: 0.5rem 0.3rem;
+                font-size: 0.65rem;
+            }
+
+            /* Pick cards */
+            .pick-card {
+                padding: 0.65rem;
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: flex-start;
+            }
+
+            .pick-info {
+                width: 100%;
+            }
+
+            .pick-confidence {
+                width: 100%;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .confidence-value {
+                font-size: 1rem;
+            }
+
+            .confidence-label {
+                font-size: 0.6rem;
+            }
+
+            /* Parlay cards */
+            .parlay-card {
+                padding: 0.75rem;
+            }
+
+            .parlay-header {
+                flex-direction: column;
+                gap: 0.3rem;
+                align-items: flex-start;
+            }
+
+            .parlay-odds {
+                font-size: 1rem;
+            }
+
+            .parlay-pick {
+                font-size: 0.75rem;
+            }
+
+            .parlay-footer {
+                flex-direction: column;
+                gap: 0.3rem;
+                font-size: 0.75rem;
+            }
+
+            /* Model stats - Keep 2x2 but smaller */
+            .model-stats {
+                gap: 0.4rem;
+            }
+
+            .model-stat {
+                padding: 0.6rem;
+                border-radius: 8px;
+            }
+
+            .model-stat-value {
+                font-size: 1.1rem;
+            }
+
+            .model-stat-label {
+                font-size: 0.6rem;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 0.75rem;
+                font-size: 0.65rem;
+                line-height: 1.4;
+            }
+
+            /* Contracts guide on mobile */
+            #contracts-guide div {
+                font-size: 0.7rem !important;
+            }
+        }
+
+        /* Extra small phones */
+        @media (max-width: 360px) {
+            .header h1 {
+                font-size: 1rem;
+            }
+
+            .stat-item {
+                min-width: 55px;
+                padding: 0.3rem 0.4rem;
+            }
+
+            .stat-value {
+                font-size: 0.85rem;
+            }
+
+            .nav-tab {
+                padding: 0.5rem 0.6rem;
+                font-size: 0.7rem;
+            }
+
+            .picks-tab {
+                flex: 0 0 calc(50% - 0.2rem);
+                font-size: 0.6rem;
+            }
+
+            .team-name {
+                max-width: 90px;
+            }
+        }
+
+        /* Touch device improvements */
+        @media (hover: none) and (pointer: coarse) {
+            /* Remove hover effects that don't work on touch */
+            .game-card:hover {
+                transform: none;
+            }
+
+            .btn:hover {
+                transform: none;
+            }
+
+            /* Add active states instead */
+            .game-card:active {
+                transform: scale(0.98);
+                border-color: var(--accent-primary);
+            }
+
+            .btn:active {
+                transform: scale(0.98);
+                background: var(--accent-secondary);
+            }
+
+            .nav-tab:active {
+                background: rgba(255, 255, 255, 0.1);
+            }
+
+            .picks-tab:active {
+                background: var(--bg-card-hover);
+            }
+
+            .pick-card:active {
+                border-color: var(--accent-primary);
+            }
+        }
+
+        /* Landscape phone optimization */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .header {
+                flex-direction: row;
+                padding: 0.5rem 1rem;
+            }
+
+            .header h1 {
+                font-size: 1rem;
+            }
+
+            .header-stats {
+                gap: 0.5rem;
+            }
+
+            .nav-tabs {
+                padding: 0.3rem 0.5rem;
+            }
+
+            .nav-tab {
+                padding: 0.4rem 0.75rem;
+                font-size: 0.75rem;
+                min-height: 36px;
+            }
+        }
     </style>
 </head>
 
