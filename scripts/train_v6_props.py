@@ -189,9 +189,9 @@ if live_players:
     if len(live_nfl) > 10:
         print(f"   [NFL] Replacing hardcoded stats with {len(live_nfl)} live players")
         NFL_PLAYER_STATS = live_nfl
-    if len(live_ncaa) > 10:
-        print(f"   [NCAA] Replacing hardcoded stats with {len(live_ncaa)} live players")
-        NCAA_PLAYER_STATS = live_ncaa
+    # if len(live_ncaa) > 10:
+    #     print(f"   [NCAA] Replacing hardcoded stats with {len(live_ncaa)} live players")
+    #     NCAA_PLAYER_STATS = live_ncaa
 
 
 NBA_PLAYER_STATS = {
